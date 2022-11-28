@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Yujie Zhang"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "PhD student at University of Illinois Urbana-Champaign"
   location         : "Urbana, Illinois"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en"
@@ -95,7 +95,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : #"academicpages"
   google_plus      :
   keybase          :
   instagram        :
@@ -108,7 +108,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "https://twitter.com/yujie4physics"
+  twitter          : "yujie4physics"
   vine             :
   weibo            :
   xing             :
