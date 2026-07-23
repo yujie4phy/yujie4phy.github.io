@@ -14,6 +14,7 @@ export default function ResearchPage() {
       current="research"
       pageTitle="research"
       pageDescription="Foundations, information processing, and optical quantum networks"
+      pageHeadingVariant="compact"
     >
       <section className="research-overview" aria-labelledby="research-overview">
         <h2 id="research-overview">Research overview</h2>
@@ -43,7 +44,6 @@ export default function ResearchPage() {
 
       <section className="research-theme" aria-labelledby="nonclassicality">
         <header className="research-theme-heading">
-          <span className="research-number">01</span>
           <h2 id="nonclassicality">
             Operational Foundations of Quantum Nonclassicality
           </h2>
@@ -168,7 +168,6 @@ export default function ResearchPage() {
 
       <section className="research-theme" aria-labelledby="optical-networks">
         <header className="research-theme-heading">
-          <span className="research-number">02</span>
           <h2 id="optical-networks">
             Optical Quantum Information Processing and Quantum Networks
           </h2>
@@ -350,7 +349,6 @@ export default function ResearchPage() {
 
       <section className="research-theme" aria-labelledby="broader-directions">
         <header className="research-theme-heading">
-          <span className="research-number">03</span>
           <h2 id="broader-directions">
             Broader Directions in Quantum Information and AI for Quantum Science
           </h2>

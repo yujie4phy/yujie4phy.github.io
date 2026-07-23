@@ -17,6 +17,7 @@ export default function PublicationsPage() {
       current="publications"
       pageTitle="publications"
       pageDescription="Publications in reverse chronological order"
+      pageHeadingVariant="compact"
     >
       <p className="page-lead">
         Papers and preprints in reverse chronological order. See also{" "}

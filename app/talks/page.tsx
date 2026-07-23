@@ -10,6 +10,7 @@ export default function TalksPage() {
       current="talks"
       pageTitle="talks"
       pageDescription="Selected presentations, seminars, and conference talks"
+      pageHeadingVariant="compact"
     >
       <p className="page-lead">
         Selected conference and seminar presentations. Slides are available

@@ -653,20 +653,14 @@ summary {
   margin-top: 86px;
 }
 
-.research-theme-heading {
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr);
-  gap: 16px;
-  align-items: start;
-  margin-bottom: 30px;
+.research-theme + .research-theme {
+  margin-top: 76px;
+  padding-top: 76px;
+  border-top: 1px solid var(--border);
 }
 
-.research-number {
-  padding-top: 7px;
-  color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.78rem;
-  font-weight: 800;
+.research-theme-heading {
+  margin-bottom: 30px;
 }
 
 .research-theme-heading h2 {
@@ -804,6 +798,11 @@ summary {
   .research-theme {
     margin-top: 70px;
   }
+
+  .research-theme + .research-theme {
+    margin-top: 62px;
+    padding-top: 62px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -845,15 +844,6 @@ summary {
 
   .section-heading-row {
     align-items: flex-end;
-  }
-
-  .research-theme-heading {
-    grid-template-columns: 1fr;
-    gap: 5px;
-  }
-
-  .research-number {
-    padding-top: 0;
   }
 
   .site-footer {

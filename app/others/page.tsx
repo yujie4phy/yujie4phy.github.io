@@ -10,6 +10,7 @@ export default function OthersPage() {
       current="others"
       pageTitle="others"
       pageDescription="Public engagement beyond the publication list"
+      pageHeadingVariant="compact"
     >
       <section className="cv-section" aria-labelledby="outreach-heading">
         <h2 id="outreach-heading">Outreach</h2>
