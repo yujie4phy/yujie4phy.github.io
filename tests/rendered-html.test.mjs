@@ -20,9 +20,9 @@ test("renders the editable About content and profile links", async () => {
 test("renders research themes and related papers from content files", async () => {
   const html = await output("research/index.html");
 
-  assert.match(html, /Operational Foundations of Quantum Nonclassicality/);
-  assert.match(html, /Optical Quantum Information Processing and Quantum Networks/);
-  assert.match(html, /Broader Directions in Quantum Information and AI/);
+  assert.match(html, /id="nonclassicality"/);
+  assert.match(html, /id="optical-networks"/);
+  assert.match(html, /id="broader-directions"/);
   assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
 });
 

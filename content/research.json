@@ -3,8 +3,8 @@
   "overview": {
     "title": "Research overview",
     "paragraphs": [
-      "My research seeks to understand what is genuinely nonclassical about quantum theory and to translate that understanding into useful protocols for quantum information processing. My work combines quantum foundations and quantum information theory with experimental and theoretical quantum optics.",
-      "My current research is organized around three interconnected themes:"
+      "My research seeks to understand what is genuinely nonclassical about quantum theory and to translate that understanding into useful protocols for quantum information processing. My work combines quantum foundations and quantum information theory with experimental and theoretical photonic quantum information processing. ",
+      "My current research is organized around three themes:"
     ],
     "topics": [
       "developing operational frameworks for defining, certifying, and quantifying quantum nonclassicality;",
@@ -15,9 +15,9 @@
   "themes": [
     {
       "id": "nonclassicality",
-      "title": "Operational Foundations of Quantum Nonclassicality",
+      "title": "Foundations of Quantum Nonclassicality",
       "paragraphs": [
-        "A central question in my research is how to identify what is genuinely nonclassical about quantum theory. I approach this question operationally: rather than relying on a particular mathematical representation, I seek definitions and tests of nonclassicality that can be expressed directly in terms of laboratory procedures and observable statistics.",
+        "A central question in my research is how to identify what is genuinely nonclassical about quantum theory. Rather than relying on a particular mathematical representation,  I'd like to approach this question operationally; I seek definitions and tests of nonclassicality that can be expressed directly in terms of laboratory procedures and experimental statistics.",
         "My work studies several related manifestations of nonclassicality, including measurement incompatibility, generalized contextuality, entanglement, quantum steering, Bell nonlocality, and negativity in quasiprobability representations. I am particularly interested in understanding the relationships among these phenomena and in developing systematic methods to **define**, **certify**, and **quantify** the resources they represent.",
         "From a foundational perspective, this program aims to distinguish genuinely quantum phenomena from effects that can arise through classical mechanisms, such as incomplete information, epistemic restrictions, or limited operational access. Comparisons with broader post-quantum theories can also help reveal which features of nonclassicality are specific to quantum theory, which extend beyond it, and which structural principles constrain the correlations permitted by nature.",
         "These questions are also important for quantum technology. Identifying the relevant nonclassical resource can explain the origin of a quantum advantage in an existing protocol. It can also suggest new measurements, encodings, and information-processing tasks that use the resource more effectively."
