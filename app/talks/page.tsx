@@ -32,9 +32,10 @@ export default function TalksPage() {
                     <a
                       href={link.href}
                       key={link.label}
-                      download={link.label === "Slides" ? true : undefined}
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      {link.label}
+                      {link.label} ↗
                     </a>
                   ) : (
                     <span className="paper-link is-disabled" key={link.label}>{link.label}</span>

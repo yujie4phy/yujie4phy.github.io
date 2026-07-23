@@ -58,6 +58,13 @@ export type Talk = {
   links: PublicationLink[];
 };
 
+const githubPagesUrl = "https://yujie4phy.github.io";
+
+function onlineSlideUrl(filename: string) {
+  const publicDeckUrl = `${githubPagesUrl}/slides/${filename}`;
+  return `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(publicDeckUrl)}`;
+}
+
 export const profile = {
   givenName: "Yujie",
   familyName: "Zhang",
@@ -597,8 +604,8 @@ export const talks: Talk[] = [
     location: "—",
     links: [
       {
-        label: "Slides",
-        href: "/slides/entanglement-certification-noncontextuality-inequalities.pptx",
+        label: "View slides",
+        href: onlineSlideUrl("entanglement-certification-noncontextuality-inequalities.pptx"),
       },
     ],
   },
@@ -609,8 +616,8 @@ export const talks: Talk[] = [
     location: "—",
     links: [
       {
-        label: "Slides",
-        href: "/slides/criteria-optimal-entanglement-enhanced-long-baseline-imaging.pptx",
+        label: "View slides",
+        href: onlineSlideUrl("criteria-optimal-entanglement-enhanced-long-baseline-imaging.pptx"),
       },
     ],
   },
@@ -621,8 +628,8 @@ export const talks: Talk[] = [
     location: "—",
     links: [
       {
-        label: "Slides",
-        href: "/slides/defining-nonclassicality-individual-quantum-processes.pptx",
+        label: "View slides",
+        href: onlineSlideUrl("defining-nonclassicality-individual-quantum-processes.pptx"),
       },
     ],
   },
@@ -633,8 +640,8 @@ export const talks: Talk[] = [
     location: "—",
     links: [
       {
-        label: "Slides",
-        href: "/slides/exact-steering-bound-two-qubit-werner-states.pptx",
+        label: "View slides",
+        href: onlineSlideUrl("exact-steering-bound-two-qubit-werner-states.pptx"),
       },
     ],
   },
@@ -645,8 +652,8 @@ export const talks: Talk[] = [
     location: "—",
     links: [
       {
-        label: "Slides",
-        href: "/slides/quantum-enhanced-interferometric-imaging.pptx",
+        label: "View slides",
+        href: onlineSlideUrl("quantum-enhanced-interferometric-imaging.pptx"),
       },
     ],
   },
