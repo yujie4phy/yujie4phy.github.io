@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { PublicationList } from "./components/PublicationList";
 import { SiteShell } from "./components/SiteShell";
@@ -21,13 +22,16 @@ export default function Home() {
           </h1>
         </div>
 
-        <aside className="affiliation-card" aria-label="Current affiliation">
-          <span className="ket-mark" aria-hidden="true">|ψ⟩</span>
-          <div>
-            <strong>{profile.institution}</strong>
-            <span>{profile.department}</span>
-            <span>{profile.location}</span>
-          </div>
+        <aside className="profile-portrait" aria-label={`Portrait of ${profile.givenName} ${profile.familyName}`}>
+          <Image
+            className="profile-photo"
+            src="/yujie-zhang.jpg"
+            alt={`Portrait of ${profile.givenName} ${profile.familyName}`}
+            width={260}
+            height={260}
+            priority
+          />
+          <span className="profile-location">{profile.location}</span>
         </aside>
       </section>
 

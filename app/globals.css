@@ -204,46 +204,25 @@ summary {
   font-weight: 760;
 }
 
-.affiliation-card {
-  min-height: 178px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  padding: 24px;
+.profile-portrait {
+  margin: 0;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  display: block;
   border: 1px solid var(--border);
   background: var(--surface);
   box-shadow: var(--shadow);
 }
 
-.affiliation-card::after {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  right: -64px;
-  top: -58px;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  opacity: 0.24;
-}
-
-.ket-mark {
-  color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 1.35rem;
-  font-weight: 700;
-}
-
-.affiliation-card div {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.45;
-}
-
-.affiliation-card span:not(.ket-mark) {
+.profile-location {
+  display: block;
+  margin-top: 10px;
   color: var(--muted);
+  font-size: 0.9rem;
+  text-align: right;
 }
 
 .prose {
@@ -615,41 +594,10 @@ summary {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.mentorship-section {
-  margin-top: 84px;
-}
-
 .section-note {
   max-width: 720px;
   margin: -12px 0 28px;
   color: var(--muted);
-}
-
-.mentorship-list {
-  display: grid;
-  gap: 24px;
-}
-
-.mentorship-entry {
-  display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: 28px;
-  padding: 0;
-}
-
-.mentorship-entry h3 {
-  margin: 0 0 4px;
-  font-size: 1.08rem;
-}
-
-.mentorship-entry p {
-  margin: 4px 0 0;
-  color: var(--muted);
-}
-
-.mentorship-entry .mentorship-meta {
-  color: var(--foreground);
-  font-size: 0.9rem;
 }
 
 .site-footer {
@@ -697,7 +645,7 @@ summary {
     gap: 30px;
   }
 
-  .affiliation-card {
+  .profile-portrait {
     max-width: 420px;
   }
 
@@ -715,8 +663,7 @@ summary {
   }
 
   .publication,
-  .timeline-entry,
-  .mentorship-entry {
+  .timeline-entry {
     grid-template-columns: 1fr;
     gap: 14px;
   }
