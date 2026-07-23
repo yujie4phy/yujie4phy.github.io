@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { PublicationList } from "./components/PublicationList";
 import { SiteShell } from "./components/SiteShell";
@@ -16,52 +15,53 @@ export default function Home() {
   return (
     <SiteShell current="about">
       <section className="home-heading" aria-labelledby="profile-name">
-        <div>
-          <h1 id="profile-name" className="profile-name">
-            {profile.givenName} <strong>{profile.familyName}</strong>
-          </h1>
+        <h1 id="profile-name" className="profile-name">
+          {profile.givenName} <strong>{profile.familyName}</strong>
+        </h1>
+      </section>
+
+      <section className="home-intro-grid" aria-label="About">
+        <div className="prose intro-copy">
+          <p>
+            I am a postdoctoral fellow at the{" "}
+            <a href="https://uwaterloo.ca/institute-for-quantum-computing/">
+              Institute for Quantum Computing
+            </a>{" "}
+            at the University of Waterloo and am also associated with the{" "}
+            <a href="https://perimeterinstitute.ca/">Perimeter Institute for Theoretical Physics</a>.
+            I received my PhD in Physics from the University of Illinois at
+            Urbana–Champaign and my BSc in Physics from Kuang Yaming Honors School
+            at Nanjing University.
+          </p>
+          <p>
+            My research lies at the intersection of{" "}
+            <span className="accent-text">quantum foundations</span>, quantum
+            information theory, and quantum optics. I investigate operational
+            notions of nonclassicality—including generalized noncontextuality,
+            measurement incompatibility, entanglement, quantum steering, and
+            nonlocality—with a focus on their relationships, certification, and
+            quantification. I also use these insights into nonclassical resources
+            to develop practical protocols for quantum metrology and communication
+            in quantum networks. Publications and preprints are available through{" "}
+            <a href="https://arxiv.org/a/zhang_y_54.html">arXiv</a> and{" "}
+            <a href="https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en">
+              Google Scholar
+            </a>.
+          </p>
         </div>
 
         <aside className="profile-portrait" aria-label={`Portrait of ${profile.givenName} ${profile.familyName}`}>
-          <Image
+          {/* A plain image URL is used so the portrait works on the deployed site. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             className="profile-photo"
             src="/yujie-zhang.jpg"
             alt={`Portrait of ${profile.givenName} ${profile.familyName}`}
-            width={260}
-            height={260}
-            priority
+            width="230"
+            height="307"
           />
           <span className="profile-location">{profile.location}</span>
         </aside>
-      </section>
-
-      <section className="prose intro-copy" aria-label="About">
-        <p>
-          I am a postdoctoral fellow at the{" "}
-          <a href="https://uwaterloo.ca/institute-for-quantum-computing/">
-            Institute for Quantum Computing
-          </a>{" "}
-          at the University of Waterloo and am also associated with the{" "}
-          <a href="https://perimeterinstitute.ca/">Perimeter Institute for Theoretical Physics</a>.
-          I received my PhD in Physics from the University of Illinois at
-          Urbana–Champaign and my BSc in Physics from Kuang Yaming Honors School
-          at Nanjing University.
-        </p>
-        <p>
-          My research lies at the intersection of{" "}
-          <span className="accent-text">quantum foundations</span>, quantum
-          information theory, and quantum optics. I investigate operational
-          notions of nonclassicality—including generalized noncontextuality,
-          measurement incompatibility, entanglement, quantum steering, and
-          nonlocality—with a focus on their relationships, certification, and
-          quantification. I also use these insights into nonclassical resources
-          to develop practical protocols for quantum metrology and communication
-          in quantum networks. Publications and preprints are available through{" "}
-          <a href="https://arxiv.org/a/zhang_y_54.html">arXiv</a> and{" "}
-          <a href="https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en">
-            Google Scholar
-          </a>.
-        </p>
       </section>
 
       <section className="section-block" aria-labelledby="selected-publications">

@@ -81,7 +81,7 @@ summary {
 .header-inner,
 .site-main,
 .site-footer {
-  width: min(900px, calc(100% - 48px));
+  width: min(780px, calc(100% - 48px));
   margin-inline: auto;
 }
 
@@ -181,27 +181,30 @@ summary {
 
 .site-main {
   flex: 1;
-  padding-block: 72px 100px;
+  padding-block: 52px 90px;
 }
 
 .home-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
-  gap: 48px;
-  align-items: end;
-  margin-bottom: 42px;
+  margin-bottom: 22px;
 }
 
 .profile-name {
   margin: 0;
-  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-size: clamp(2.65rem, 6vw, 3.35rem);
   font-weight: 300;
-  letter-spacing: -0.06em;
-  line-height: 0.96;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
 }
 
 .profile-name strong {
   font-weight: 760;
+}
+
+.home-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  gap: 32px;
+  align-items: start;
 }
 
 .profile-portrait {
@@ -210,24 +213,30 @@ summary {
 
 .profile-photo {
   width: 100%;
+  aspect-ratio: 3 / 4;
   height: auto;
   display: block;
   border: 1px solid var(--border);
   background: var(--surface);
   box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: center 32%;
 }
 
 .profile-location {
   display: block;
-  margin-top: 10px;
-  color: var(--muted);
+  margin-top: 12px;
+  color: var(--foreground);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.9rem;
-  text-align: right;
+  font-weight: 650;
+  line-height: 1.45;
 }
 
 .prose {
-  max-width: 780px;
-  font-size: 1.05rem;
+  max-width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .prose p {
@@ -239,7 +248,7 @@ summary {
 }
 
 .section-block {
-  margin-top: 84px;
+  margin-top: 52px;
 }
 
 .section-heading-row {
@@ -640,15 +649,6 @@ summary {
     padding-bottom: 6px;
   }
 
-  .home-heading {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .profile-portrait {
-    max-width: 420px;
-  }
-
   .others-grid {
     grid-template-columns: 1fr;
   }
@@ -685,7 +685,7 @@ summary {
   .header-inner,
   .site-main,
   .site-footer {
-    width: min(100% - 28px, 900px);
+    width: min(100% - 28px, 780px);
   }
 
   .profile-links {
@@ -702,7 +702,16 @@ summary {
   }
 
   .profile-name {
-    font-size: 3.2rem;
+    font-size: 2.7rem;
+  }
+
+  .home-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .profile-portrait {
+    max-width: 230px;
   }
 
   .section-block {
