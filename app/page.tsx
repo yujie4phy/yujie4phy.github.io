@@ -34,8 +34,7 @@ export default function Home() {
             at Nanjing University.
           </p>
           <p>
-            My research lies at the intersection of{" "}
-            <span className="accent-text">quantum foundations</span>, quantum
+            My research lies at the intersection of quantum foundations, quantum
             information theory, and quantum optics. I investigate operational
             notions of nonclassicality—including generalized noncontextuality,
             measurement incompatibility, entanglement, quantum steering, and
