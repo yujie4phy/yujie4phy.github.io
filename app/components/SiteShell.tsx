@@ -44,39 +44,32 @@ export function SiteShell({
     <div className="site-frame">
       <header className="site-header">
         <div className="header-inner">
-          {current === "about" ? (
-            <div className="profile-links" aria-label="Academic profiles">
-              {profile.links.map((link) => {
-                const Icon = profileIcons[link.icon];
+          <div className="profile-links" aria-label="Academic profiles">
+            {profile.links.map((link) => {
+              const Icon = profileIcons[link.icon];
 
-                return link.href ? (
-                  <a
-                    className="profile-link"
-                    href={link.href}
-                    key={link.label}
-                    aria-label={link.label}
-                    title={link.label}
-                  >
-                    <Icon aria-hidden="true" />
-                  </a>
-                ) : (
-                  <span
-                    className="profile-link is-placeholder"
-                    key={link.label}
-                    aria-label={`${link.label} link not added yet`}
-                    title={`${link.label} profile link needed`}
-                  >
-                    <Icon aria-hidden="true" />
-                  </span>
-                );
-              })}
-            </div>
-          ) : (
-            <Link className="header-name-link" href="/">
-              <span>{profile.givenName}</span>{" "}
-              <strong>{profile.familyName}</strong>
-            </Link>
-          )}
+              return link.href ? (
+                <a
+                  className="profile-link"
+                  href={link.href}
+                  key={link.label}
+                  aria-label={link.label}
+                  title={link.label}
+                >
+                  <Icon aria-hidden="true" />
+                </a>
+              ) : (
+                <span
+                  className="profile-link is-placeholder"
+                  key={link.label}
+                  aria-label={`${link.label} link not added yet`}
+                  title={`${link.label} profile link needed`}
+                >
+                  <Icon aria-hidden="true" />
+                </span>
+              );
+            })}
+          </div>
 
           <nav className="main-nav" aria-label="Main navigation">
             {navigation.map((item) => (
