@@ -345,6 +345,11 @@ summary {
   color: var(--muted);
 }
 
+.authors .self-author {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .citation {
   font-size: 0.9rem;
 }

@@ -1,4 +1,21 @@
-import { Publication } from "../site-data";
+import { profile, type Publication } from "../site-data";
+
+const selfAuthorName = `${profile.givenName} ${profile.familyName}`;
+
+function highlightSelfAuthor(authors: string) {
+  const parts = authors.split(selfAuthorName);
+
+  return parts.flatMap((part, index) =>
+    index < parts.length - 1
+      ? [
+          part,
+          <strong className="self-author" key={`${selfAuthorName}-${index}`}>
+            {selfAuthorName}
+          </strong>,
+        ]
+      : [part],
+  );
+}
 
 export function PublicationList({
   publications,
@@ -17,7 +34,7 @@ export function PublicationList({
           </div>
           <div className="publication-content">
             <h3>{publication.title}</h3>
-            <p className="authors">{publication.authors}</p>
+            <p className="authors">{highlightSelfAuthor(publication.authors)}</p>
             <p className="citation">{publication.citation}</p>
             <div className="paper-actions">
               <details>
