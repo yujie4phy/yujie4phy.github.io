@@ -192,15 +192,6 @@ summary {
   margin-bottom: 42px;
 }
 
-.eyebrow {
-  margin: 0 0 8px;
-  color: var(--accent);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 .profile-name {
   margin: 0;
   font-size: clamp(3rem, 7vw, 5.8rem);
@@ -211,12 +202,6 @@ summary {
 
 .profile-name strong {
   font-weight: 760;
-}
-
-.role-line {
-  margin: 20px 0 0;
-  color: var(--muted);
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
 }
 
 .affiliation-card {
@@ -271,11 +256,6 @@ summary {
 }
 
 .accent-text {
-  color: var(--accent);
-}
-
-.placeholder-text {
-  border-bottom: 1px dashed var(--accent);
   color: var(--accent);
 }
 
