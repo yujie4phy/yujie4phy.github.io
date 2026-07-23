@@ -129,6 +129,25 @@ summary {
   cursor: help;
 }
 
+.header-name-link {
+  flex: none;
+  color: var(--foreground);
+  font-size: 1.08rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header-name-link strong {
+  font-weight: 760;
+}
+
+.header-name-link:hover {
+  color: var(--accent);
+}
+
 .main-nav {
   gap: 20px;
 }
@@ -417,17 +436,6 @@ summary {
 
 .page-heading {
   margin-bottom: 54px;
-}
-
-.name-link {
-  display: inline-block;
-  margin-bottom: 38px;
-  color: var(--muted);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .page-heading h1 {

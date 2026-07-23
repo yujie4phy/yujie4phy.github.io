@@ -44,32 +44,39 @@ export function SiteShell({
     <div className="site-frame">
       <header className="site-header">
         <div className="header-inner">
-          <div className="profile-links" aria-label="Academic profiles">
-            {profile.links.map((link) => {
-              const Icon = profileIcons[link.icon];
+          {current === "about" ? (
+            <div className="profile-links" aria-label="Academic profiles">
+              {profile.links.map((link) => {
+                const Icon = profileIcons[link.icon];
 
-              return link.href ? (
-                <a
-                  className="profile-link"
-                  href={link.href}
-                  key={link.label}
-                  aria-label={link.label}
-                  title={link.label}
-                >
-                  <Icon aria-hidden="true" />
-                </a>
-              ) : (
-                <span
-                  className="profile-link is-placeholder"
-                  key={link.label}
-                  aria-label={`${link.label} link not added yet`}
-                  title={`${link.label} profile link needed`}
-                >
-                  <Icon aria-hidden="true" />
-                </span>
-              );
-            })}
-          </div>
+                return link.href ? (
+                  <a
+                    className="profile-link"
+                    href={link.href}
+                    key={link.label}
+                    aria-label={link.label}
+                    title={link.label}
+                  >
+                    <Icon aria-hidden="true" />
+                  </a>
+                ) : (
+                  <span
+                    className="profile-link is-placeholder"
+                    key={link.label}
+                    aria-label={`${link.label} link not added yet`}
+                    title={`${link.label} profile link needed`}
+                  >
+                    <Icon aria-hidden="true" />
+                  </span>
+                );
+              })}
+            </div>
+          ) : (
+            <Link className="header-name-link" href="/">
+              <span>{profile.givenName}</span>{" "}
+              <strong>{profile.familyName}</strong>
+            </Link>
+          )}
 
           <nav className="main-nav" aria-label="Main navigation">
             {navigation.map((item) => (
@@ -90,9 +97,6 @@ export function SiteShell({
       <main className="site-main">
         {pageTitle ? (
           <header className={`page-heading ${pageHeadingVariant}`}>
-            <Link className="name-link" href="/">
-              {profile.givenName} {profile.familyName}
-            </Link>
             {pageTitleAction ? (
               <div className="page-title-row">
                 <h1>{pageTitle}</h1>
