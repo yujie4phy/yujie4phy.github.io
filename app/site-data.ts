@@ -507,11 +507,6 @@ export const awards: Award[] = [
       "Recognizes early-career researchers whose work moves quantum information science and engineering in new directions.",
     href: "https://chicagoquantum.org/education-and-training/2023-boeing-quantum-creators-prize-winners",
   },
-  {
-    year: "2019",
-    title: "University Fellowship",
-    description: "Awarded for outstanding research accomplishments.",
-  },
 ];
 
 export const mentorship: Mentorship[] = [
@@ -587,13 +582,6 @@ export const outreach: Outreach[] = [
     description:
       "Led the creation of a public-facing quantum-network node distributing entangled photons from UIUC to a local library and connecting research with education.",
     href: "https://iquist.illinois.edu/outreach/pqn/people",
-  },
-  {
-    year: "2023",
-    title: "IQUIST at Ant-Man and the Wasp: Quantumania",
-    description:
-      "Led a public post-screening discussion about quantum science, coordinated by the Illinois Quantum Information Science and Technology Center.",
-    href: "https://calendars.illinois.edu/detail/6415?eventId=33454672",
   },
 ];
 
