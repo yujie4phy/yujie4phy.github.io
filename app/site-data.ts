@@ -212,14 +212,14 @@ export const publications: Publication[] = [
   {
     year: 2025,
     venue: "PR Research",
-    title: "Criteria for Optimal Entanglement-Assisted Long Baseline Telescopy",
+    title: "Criteria for optimal entanglement-assisted long baseline telescopy",
     authors: "Yujie Zhang, Thomas Jennewein",
     citation: "Physical Review Research 7, 043278 (2025)",
     abstract:
-      "This work establishes criteria for optimal entanglement-assisted imaging across long baselines and compares shared entanglement and linear-optical teleportation resources for astronomical sensing.",
+      "Entanglement-assisted telescopy protocols have been proposed as a means to extend the baseline of optical interferometric telescopes. However, the optimal entangled resource and a clear optimality criterion have remained unclear. Here, we propose a framework for systematically characterizing entanglement-assisted telescopy by integrating quantum metrology tools with the superselection rule (SSR) framework from quantum information theory. In our approach, the estimation problem in quantum telescopy is rigorously quantified using the quantum Fisher information under SSR constraints. Building on this framework, we derive the fundamental limits of astronomical parameter estimation with finite entanglement resources and introduce protocols that outperform previous methods and asymptotically saturate the optimal bound. Moreover, our proposed protocols are compatible with existing linear-optical technology and could inspire practical quantum telescopy schemes for near-term, lossy, and repeaterless quantum networks.",
+    selected: true,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2501.16670" },
-      { label: "PDF", href: "https://arxiv.org/pdf/2501.16670" },
       {
         label: "Journal",
         href: "https://doi.org/10.1103/PhysRevResearch.7.043278",
