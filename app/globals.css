@@ -81,7 +81,7 @@ summary {
 .header-inner,
 .site-main,
 .site-footer {
-  width: min(1120px, calc(100% - 48px));
+  width: min(900px, calc(100% - 48px));
   margin-inline: auto;
 }
 
@@ -186,8 +186,8 @@ summary {
 
 .home-heading {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 64px;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 48px;
   align-items: end;
   margin-bottom: 42px;
 }
@@ -280,12 +280,6 @@ summary {
   letter-spacing: -0.045em;
 }
 
-.section-rule {
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-
 .text-link {
   flex: none;
   font-size: 0.9rem;
@@ -293,21 +287,6 @@ summary {
   text-decoration: none;
 }
 
-.interest-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  border: 1px solid var(--border);
-  background: var(--border);
-}
-
-.interest-card {
-  min-height: 230px;
-  padding: 28px;
-  background: var(--surface);
-}
-
-.interest-index,
 .panel-number {
   color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -315,7 +294,6 @@ summary {
   font-weight: 700;
 }
 
-.interest-card h3,
 .publication h3,
 .timeline-entry h3,
 .feature-panel h2,
@@ -327,7 +305,6 @@ summary {
   line-height: 1.3;
 }
 
-.interest-card p,
 .feature-panel p {
   margin: 0;
   color: var(--muted);
@@ -335,19 +312,14 @@ summary {
 
 .publication-list {
   display: grid;
-  gap: 4px;
+  gap: 18px;
 }
 
 .publication {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr);
   gap: 28px;
-  padding: 26px 0;
-  border-top: 1px solid var(--border);
-}
-
-.publication-list .publication:last-child {
-  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
 }
 
 .venue-column {
@@ -535,15 +507,15 @@ summary {
 }
 
 .timeline {
-  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 28px;
 }
 
 .timeline-entry {
   display: grid;
   grid-template-columns: 190px minmax(0, 1fr);
   gap: 28px;
-  padding: 28px 0;
-  border-bottom: 1px solid var(--border);
+  padding: 0;
 }
 
 .timeline-date {
@@ -567,7 +539,8 @@ summary {
 }
 
 .talks-table {
-  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 24px;
 }
 
 .talk-row {
@@ -575,8 +548,7 @@ summary {
   grid-template-columns: 120px minmax(0, 1fr) 190px;
   gap: 28px;
   align-items: start;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--border);
+  padding: 0;
 }
 
 .talk-header {
@@ -654,15 +626,15 @@ summary {
 }
 
 .mentorship-list {
-  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 24px;
 }
 
 .mentorship-entry {
   display: grid;
   grid-template-columns: 190px minmax(0, 1fr);
   gap: 28px;
-  padding: 24px 0;
-  border-bottom: 1px solid var(--border);
+  padding: 0;
 }
 
 .mentorship-entry h3 {
@@ -729,12 +701,10 @@ summary {
     max-width: 420px;
   }
 
-  .interest-grid,
   .others-grid {
     grid-template-columns: 1fr;
   }
 
-  .interest-card,
   .feature-panel {
     min-height: auto;
   }
@@ -768,7 +738,7 @@ summary {
   .header-inner,
   .site-main,
   .site-footer {
-    width: min(100% - 28px, 1120px);
+    width: min(100% - 28px, 900px);
   }
 
   .profile-links {
@@ -794,10 +764,6 @@ summary {
 
   .section-heading-row {
     align-items: flex-end;
-  }
-
-  .section-rule {
-    display: none;
   }
 
   .page-intro-action,

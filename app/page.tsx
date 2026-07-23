@@ -60,22 +60,6 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="section-block" aria-labelledby="research-interests">
-        <div className="section-heading-row">
-          <h2 id="research-interests">research interests</h2>
-          <span className="section-rule" />
-        </div>
-        <div className="interest-grid">
-          {profile.interests.map((interest, index) => (
-            <article className="interest-card" key={interest.title}>
-              <span className="interest-index">0{index + 1}</span>
-              <h3>{interest.title}</h3>
-              <p>{interest.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className="section-block" aria-labelledby="selected-publications">
         <div className="section-heading-row">
           <h2 id="selected-publications">selected publications</h2>
