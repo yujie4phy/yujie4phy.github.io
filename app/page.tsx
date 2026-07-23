@@ -37,11 +37,11 @@ export default function Home() {
           <a href="https://uwaterloo.ca/institute-for-quantum-computing/">
             Institute for Quantum Computing
           </a>{" "}
-          at the University of Waterloo and the{" "}
+          at the University of Waterloo and am also associated with the{" "}
           <a href="https://perimeterinstitute.ca/">Perimeter Institute for Theoretical Physics</a>.
           I received my PhD in Physics from the University of Illinois at
-          Urbana–Champaign and my BSc in Physics from Nanjing University&apos;s
-          Kuang Yaming Honors School.
+          Urbana–Champaign and my BSc in Physics from Kuang Yaming Honors School
+          at Nanjing University.
         </p>
         <p>
           My research lies at the intersection of{" "}
