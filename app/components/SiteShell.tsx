@@ -5,14 +5,15 @@ import { SiArxiv, SiGooglescholar, SiOrcid } from "react-icons/si";
 import { profile } from "../site-data";
 import { ThemeToggle } from "./ThemeToggle";
 
-type Section = "about" | "cv" | "others" | "publications" | "talks";
+type Section = "about" | "cv" | "others" | "publications" | "research" | "talks";
 
 const navigation: { label: string; href: string; id: Section }[] = [
   { label: "about", href: "/", id: "about" },
-  { label: "CV", href: "/cv", id: "cv" },
-  { label: "others", href: "/others", id: "others" },
   { label: "publications", href: "/publications", id: "publications" },
+  { label: "research", href: "/research", id: "research" },
   { label: "talks", href: "/talks", id: "talks" },
+  { label: "others", href: "/others", id: "others" },
+  { label: "CV", href: "/cv", id: "cv" },
 ];
 
 const profileIcons = {
