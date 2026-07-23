@@ -92,7 +92,7 @@ export const profile = {
     {
       label: "Twitter / X",
       icon: "twitter",
-      href: "",
+      href: "https://x.com/Yujie4physics",
     },
     {
       label: "GitHub",

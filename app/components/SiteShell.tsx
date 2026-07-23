@@ -98,9 +98,9 @@ export function SiteShell({
       <footer className="site-footer">
         <div>
           <span>{profile.givenName} {profile.familyName}</span>
-          <span>Quantum information</span>
+          <span>Quantum information, foundations and optics</span>
         </div>
-        <p>Built for free hosting · Last updated {profile.lastUpdated}</p>
+        <p>Last updated {profile.lastUpdated}</p>
       </footer>
     </div>
   );
