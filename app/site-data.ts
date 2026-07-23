@@ -128,7 +128,6 @@ export const publications: Publication[] = [
     citation: "arXiv:2606.27276 (2026)",
     abstract:
       "This work studies the quantum limits of subdiffraction imaging with telescope arrays and identifies genuine multi-telescope interference as an essential resource for reaching the optimal precision.",
-    selected: true,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2606.27276" },
       { label: "PDF", href: "https://arxiv.org/pdf/2606.27276" },
@@ -137,31 +136,29 @@ export const publications: Publication[] = [
   {
     year: 2026,
     venue: "PRX",
-    title: "A New Paradigm for Entanglement Certification Using Noncontextuality Inequalities",
+    title: "Entanglement Certification with Noncontextuality Inequalities",
     authors:
       "Yujie Zhang, Jonah Spodek, David Schmid, Carter Reid, Liam J. Morrison, Thomas Jennewein, Kevin J. Resch, Robert W. Spekkens",
     citation: "Physical Review X (2026)",
     abstract:
-      "By combining Bell locality with generalized noncontextuality, this work develops a hierarchy of experimentally practical inequalities that witness entanglement, steering, and nonlocality without prior measurement characterization.",
+      "By combining the assumptions of Bell locality with those of generalized noncontextuality, we define classes of noncontextuality inequalities for correlations arising in a bipartite Bell circuit. These classes are distinguished by which subsets of the full set of operational identities are taken as input to the principle of noncontextuality; certain natural subsets form a hierarchy that provides a new way of understanding and classifying quantum correlations, including entanglement, steering, and nonlocality. Each level of this hierarchy gives rise to a corresponding class of noncontextuality inequalities whose violation witnesses one of these forms of bipartite quantum resourcefulness, thereby yielding different sufficient conditions for entanglement. The resulting entanglement certification paradigm requires no prior characterization of the measurements, is independent of tomographic gauge freedom, and can certify any entangled state without auxiliary entangled sources. To illustrate its power, we show that noncontextuality inequalities can certify entanglement for families of two-qubit isotropic states for which Bell or steering inequalities are known to fail. We also show that, compared with the Bell test, this approach certifies a much larger fraction of entangled states, while the associated membership problem is more tractable.",
     selected: true,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2507.01122" },
-      { label: "PDF", href: "https://arxiv.org/pdf/2507.01122" },
       { label: "Journal", href: "https://doi.org/10.1103/dxpr-wp6l" },
     ],
   },
   {
     year: 2026,
     venue: "PRX",
-    title: "Reassessing the Boundary Between Classical and Nonclassical for Individual Quantum Processes",
+    title: "Reassessing the Boundary between Classical and Nonclassical for Individual Quantum Processes",
     authors: "Yujie Zhang, David Schmid, Yìlè Yīng, Robert W. Spekkens",
     citation: "Physical Review X 16, 021050 (2026)",
     abstract:
-      "This work uses generalized noncontextuality to define a unified classical–nonclassical boundary for individual quantum processes, including states, measurements, channels, and assemblages.",
+      "There is a received wisdom about where to draw the boundary between classical and nonclassical for various types of quantum processes. For multipartite states, it is the divide between separable and entangled; for channels, the divide between entanglement breaking and not; for sets of measurements, the divide between compatible and incompatible; for assemblages, the divide between unsteerable and steerable. However, these choices have not been motivated by any unified notion of what it means to be classically explainable. One well-motivated notion of classical explainability is the one based on generalized noncontextuality: A set of circuits is classically explainable if a generalized-noncontextual ontological model can realize the statistics they generate. In this work, we show that this notion can be leveraged to define a classical-nonclassical divide for individual quantum processes of arbitrary type.",
     selected: true,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2503.05884" },
-      { label: "PDF", href: "https://arxiv.org/pdf/2503.05884" },
       {
         label: "Journal",
         href: "https://journals.aps.org/prx/accepted/10.1103/vqfz-wzjg",
@@ -177,7 +174,6 @@ export const publications: Publication[] = [
     citation: "npj Quantum Information 12, 38 (2026)",
     abstract:
       "A time-resolved method is developed to certify frequency-bin entanglement transmitted through spatially multimode channels, supporting high-dimensional quantum communication over practical links.",
-    selected: true,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2508.10200" },
       { label: "PDF", href: "https://arxiv.org/pdf/2508.10200" },
@@ -324,10 +320,10 @@ export const publications: Publication[] = [
     authors: "Yujie Zhang, Eric Chitambar",
     citation: "Physical Review Letters 132, 250201 (2024)",
     abstract:
-      "The exact quantum-steering threshold for two-qubit Werner states under general measurements is derived, resolving a longstanding open problem.",
+      "We investigate the relationship between projective measurements and positive operator-valued measures (POVMs) in the task of quantum steering. A longstanding open problem in the field has been whether POVMs are more powerful than projective measurements for the steerability of noisy singlet states, which are known as Werner states. We resolve this problem for two-qubit systems and show that the two are equally powerful, thereby closing the so-called Werner gap. Using the incompatible criteria for noisy POVMs and the connection between quantum steering and measurement incompatibility, we construct a local hidden state model for Werner states with Bloch sphere radius r ≤ 1/2 under general POVMs. This construction also provides a local hidden variable model for a larger range of Werner states than previously known. In contrast, we also show that projective measurements and POVMs can have inequivalent noise tolerances when using a fixed state ensemble to build different local hidden state models. These results help clarify the relationship between projective measurements and POVMs for the tasks of quantum steering and nonlocal information processing.",
+    selected: true,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2309.09960" },
-      { label: "PDF", href: "https://arxiv.org/pdf/2309.09960" },
       {
         label: "Journal",
         href: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.250201",
@@ -384,14 +380,14 @@ export const publications: Publication[] = [
   {
     year: 2022,
     venue: "Quantum",
-    title: "Building Multiple Access Channels With a Single Particle",
+    title: "Building Multiple Access Channels with a Single Particle",
     authors: "Yujie Zhang, Xinan Chen, Eric Chitambar",
     citation: "Quantum 6, 653 (2022)",
     abstract:
-      "Single-particle interferometers are used to construct quantum multiple-access channels and communication games that witness advantages from genuine multilevel coherence.",
+      "A multiple access channel describes a situation in which multiple senders are trying to forward messages to a single receiver using some physical medium. In this paper we consider scenarios in which this medium consists of just a single classical or quantum particle. In the quantum case, the particle can be prepared in a superposition state thereby allowing for a richer family of encoding strategies. To make the comparison between quantum and classical channels precise, we introduce an operational framework in which all possible encoding strategies consume no more than a single particle. We apply this framework to an N-port interferometer experiment in which each party controls a path the particle can traverse. When used for the purpose of communication, this setup embodies a multiple access channel (MAC) built with a single particle.",
+    selected: true,
     links: [
       { label: "arXiv", href: "https://arxiv.org/abs/2006.12475" },
-      { label: "PDF", href: "https://arxiv.org/pdf/2006.12475" },
       {
         label: "Journal",
         href: "https://quantum-journal.org/papers/q-2022-02-16-653/",
