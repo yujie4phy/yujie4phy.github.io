@@ -58,10 +58,11 @@ export type Talk = {
   links: PublicationLink[];
 };
 
-const githubPagesUrl = "https://yujie4phy.github.io";
+const publicAssetUrl =
+  "https://quantum-info-postdoc-profile.yujie4physics.chatgpt.site";
 
 function onlineSlideUrl(filename: string) {
-  const publicDeckUrl = `${githubPagesUrl}/slides/${filename}`;
+  const publicDeckUrl = `${publicAssetUrl}/slides/${filename}`;
   return `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(publicDeckUrl)}`;
 }
 
