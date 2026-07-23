@@ -1,0 +1,57 @@
+{
+  "givenName": "Yujie",
+  "familyName": "Zhang",
+  "role": "Postdoctoral Fellow in Quantum Information",
+  "institution": "Institute for Quantum Computing",
+  "department": "University of Waterloo · Perimeter Institute",
+  "location": "Waterloo, Canada",
+  "email": "yujie.zhang1@uwaterloo.ca",
+  "lastUpdated": "July 2026",
+  "cvFile": "/Yujie-Zhang-CV.pdf",
+  "links": [
+    {
+      "label": "Email",
+      "icon": "email",
+      "href": "mailto:yujie.zhang1@uwaterloo.ca"
+    },
+    {
+      "label": "Google Scholar",
+      "icon": "scholar",
+      "href": "https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en"
+    },
+    {
+      "label": "ORCID",
+      "icon": "orcid",
+      "href": "https://orcid.org/0000-0002-7858-7476"
+    },
+    {
+      "label": "arXiv",
+      "icon": "arxiv",
+      "href": "https://arxiv.org/a/zhang_y_54.html"
+    },
+    {
+      "label": "Twitter / X",
+      "icon": "twitter",
+      "href": "https://x.com/Yujie4physics"
+    },
+    {
+      "label": "GitHub",
+      "icon": "github",
+      "href": "https://github.com/yujie4phy"
+    }
+  ],
+  "interests": [
+    {
+      "title": "Quantum foundations",
+      "description": "Generalized contextuality, entanglement, steering, and nonlocality—especially operational ways to define and certify nonclassical quantum processes."
+    },
+    {
+      "title": "Quantum information & networks",
+      "description": "Higher-dimensional frequency-bin systems, quantum communication, and experimentally accessible protocols for distributed quantum networks."
+    },
+    {
+      "title": "Quantum metrology & optics",
+      "description": "Quantum-enhanced long-baseline imaging, astronomical interferometry, optical sensing, and photonic-state engineering."
+    }
+  ]
+}

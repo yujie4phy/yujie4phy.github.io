@@ -1,0 +1,35 @@
+{
+  "employment": [
+    {
+      "title": "Postdoctoral Fellow",
+      "institution": "Institute for Quantum Computing, University of Waterloo / Perimeter Institute",
+      "location": "Waterloo, Canada",
+      "dates": "Dec 2023 – present",
+      "detail": "Research in generalized contextuality, entanglement certification, higher-dimensional frequency-bin systems, and distributed quantum metrology."
+    }
+  ],
+  "education": [
+    {
+      "title": "PhD in Physics",
+      "institution": "University of Illinois at Urbana–Champaign",
+      "location": "Urbana, USA",
+      "dates": "2017 – 2023",
+      "detail": "Department of Physics."
+    },
+    {
+      "title": "BSc in Physics",
+      "institution": "Nanjing University",
+      "location": "Nanjing, China",
+      "dates": "2013 – 2017",
+      "detail": "Kuang Yaming Honor School."
+    }
+  ],
+  "awards": [
+    {
+      "year": "2023",
+      "title": "Boeing Quantum Creators Prize",
+      "description": "Recognizes early-career researchers whose work moves quantum information science and engineering in new directions.",
+      "href": "https://chicagoquantum.org/education-and-training/2023-boeing-quantum-creators-prize-winners"
+    }
+  ]
+}

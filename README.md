@@ -1,98 +1,79 @@
-# vinext-starter
+# Yujie Zhang — personal academic website
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+This repository contains the source for
+[yujie4phy.github.io](https://yujie4phy.github.io). The public design is kept
+separate from the editable academic content.
 
-## Prerequisites
+## The easy way to edit
 
-- Node.js `>=22.13.0`
+1. Open this website folder in Finder.
+2. Double-click **Edit My Website.command**.
+3. If macOS blocks it the first time, right-click it, choose **Open**, and
+   confirm.
+4. The local editor opens in your browser.
+5. Choose a page from the left, make your changes, and click **Save section**.
+6. Click **Build preview** to inspect the website before publishing.
 
-## Quick Start
+The editor covers:
+
+- About text
+- Research themes, subtopics, and linked papers
+- Publications and selected publications
+- Talks and online slide links
+- Outreach
+- CV entries and awards
+- Profile links, location, and footer date
+- Replacing the portrait, CV PDF, and PowerPoint files
+
+Every save makes a private local backup in `.content-backups`. This folder is
+not published.
+
+## Publish changes with GitHub Desktop
+
+After saving and previewing:
+
+1. Open **GitHub Desktop**.
+2. Choose this repository.
+3. Review the changed files shown on the left.
+4. In **Summary**, write a short description such as `Add new publication`.
+5. Click **Commit to main**.
+6. Click **Push origin**.
+7. Wait about one or two minutes. GitHub Actions will rebuild and publish the
+   site automatically.
+8. Visit [yujie4phy.github.io](https://yujie4phy.github.io) and refresh.
+
+If GitHub Desktop has not opened this folder before, use **File → Add Local
+Repository**, then select the folder containing this README.
+
+## Where the content lives
+
+The form editor writes plain JSON files in `content/`:
+
+- `about.json`
+- `research.json`
+- `publications.json`
+- `talks.json`
+- `outreach.json`
+- `cv.json`
+- `profile.json`
+
+They can also be edited directly in any text editor. The website layout and
+styling live in `app/` and should normally be left unchanged.
+
+For text fields, use:
+
+- `[link label](https://example.com)` to add a link
+- `**important text**` to add bold text
+
+## Developer commands
+
+The project uses Node.js 22 or newer and pnpm.
 
 ```bash
-npm install
-npm run dev
-npm run build
+pnpm install
+pnpm editor
+pnpm run build:github
+pnpm test
 ```
 
-This starter does not use `wrangler.jsonc`.
-
-## Included Shape
-
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
-```
-
-## Optional Dispatch-Owned ChatGPT Sign-In
-
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
-
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
-
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
-
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
-
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
-
-## Useful Commands
-
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+The GitHub Pages workflow is in `.github/workflows/deploy-pages.yml`.

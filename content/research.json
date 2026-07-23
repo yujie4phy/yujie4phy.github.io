@@ -1,0 +1,179 @@
+{
+  "pageDescription": "Foundations, information processing, and optical quantum networks",
+  "overview": {
+    "title": "Research overview",
+    "paragraphs": [
+      "My research seeks to understand what is genuinely nonclassical about quantum theory and to translate that understanding into useful protocols for quantum information processing. My work combines quantum foundations and quantum information theory with experimental and theoretical quantum optics.",
+      "My current research is organized around three interconnected themes:"
+    ],
+    "topics": [
+      "developing operational frameworks for defining, certifying, and quantifying quantum nonclassicality;",
+      "advancing optical quantum information processing for communication, sensing, and quantum networks;",
+      "exploring broader directions in quantum information and AI-assisted quantum science."
+    ]
+  },
+  "themes": [
+    {
+      "id": "nonclassicality",
+      "title": "Operational Foundations of Quantum Nonclassicality",
+      "paragraphs": [
+        "A central question in my research is how to identify what is genuinely nonclassical about quantum theory. I approach this question operationally: rather than relying on a particular mathematical representation, I seek definitions and tests of nonclassicality that can be expressed directly in terms of laboratory procedures and observable statistics.",
+        "My work studies several related manifestations of nonclassicality, including measurement incompatibility, generalized contextuality, entanglement, quantum steering, Bell nonlocality, and negativity in quasiprobability representations. I am particularly interested in understanding the relationships among these phenomena and in developing systematic methods to **define**, **certify**, and **quantify** the resources they represent.",
+        "From a foundational perspective, this program aims to distinguish genuinely quantum phenomena from effects that can arise through classical mechanisms, such as incomplete information, epistemic restrictions, or limited operational access. Comparisons with broader post-quantum theories can also help reveal which features of nonclassicality are specific to quantum theory, which extend beyond it, and which structural principles constrain the correlations permitted by nature.",
+        "These questions are also important for quantum technology. Identifying the relevant nonclassical resource can explain the origin of a quantum advantage in an existing protocol. It can also suggest new measurements, encodings, and information-processing tasks that use the resource more effectively."
+      ],
+      "papersHeading": "Selected related work",
+      "papers": [
+        {
+          "title": "Reassessing the Boundary between Classical and Nonclassical for Individual Quantum Processes",
+          "href": "https://arxiv.org/abs/2503.05884",
+          "note": "A unified, generalized-noncontextuality-based classical–nonclassical boundary for individual quantum processes."
+        },
+        {
+          "title": "Quantifiers and Witnesses for the Nonclassicality of Measurements and of States",
+          "href": "https://arxiv.org/abs/2504.02944",
+          "note": "Quantitative measures and experimentally accessible witnesses for the nonclassicality of measurements and states."
+        },
+        {
+          "title": "Entanglement Certification with Noncontextuality Inequalities",
+          "href": "https://arxiv.org/abs/2507.01122",
+          "note": "A hierarchy of noncontextuality inequalities connecting entanglement, steering, and Bell nonlocality."
+        },
+        {
+          "title": "Exact Steering Bound for Two-Qubit Werner States",
+          "href": "https://arxiv.org/abs/2309.09960",
+          "note": "The Werner-state steering threshold under general measurements and its connection to measurement incompatibility."
+        },
+        {
+          "title": "Cost of Simulating Entanglement in Steering Scenarios",
+          "href": "https://arxiv.org/abs/2302.09060",
+          "note": "The shared-randomness resources required to simulate entangled states in steering experiments."
+        },
+        {
+          "title": "Channel Activation of CHSH Nonlocality",
+          "href": "https://arxiv.org/abs/1911.06349",
+          "note": "How channels that individually destroy CHSH nonlocality can activate nonlocal state distribution when used together."
+        },
+        {
+          "title": "Building Multiple Access Channels with a Single Particle",
+          "href": "https://arxiv.org/abs/2006.12475",
+          "note": "How single-particle superposition enables communication strategies unavailable to a classical particle."
+        },
+        {
+          "title": "Superresolution in Interferometric Imaging of Strong Thermal Sources",
+          "href": "https://arxiv.org/abs/2012.14026",
+          "note": "Measurements that overcome conventional resolution limitations in optical imaging."
+        }
+      ],
+      "subthemes": []
+    },
+    {
+      "id": "optical-networks",
+      "title": "Optical Quantum Information Processing and Quantum Networks",
+      "paragraphs": [
+        "My background spans both theory and experiment in optical quantum information. This training has given me a practical understanding of both the capabilities and the limitations of photonic quantum technologies.",
+        "Photonic platforms face significant challenges as architectures for scalable, universal quantum computation, particularly when compared with leading solid-state platforms. However, photons are exceptionally well suited to transmitting quantum information and connecting distant systems. Optical quantum information processing therefore plays a central role in quantum communication, distributed quantum sensing, and metrology."
+      ],
+      "papersHeading": "Selected related work",
+      "papers": [],
+      "subthemes": [
+        {
+          "title": "Quantum-enhanced sensing and astronomical imaging",
+          "paragraphs": [
+            "I develop and analyze protocols for imaging astronomical objects using quantum communication, shared entanglement, and nonstandard optical measurements. This includes establishing fundamental precision limits, designing protocols that approach those limits, and investigating experimentally realizable measurements for sub-Rayleigh imaging, including our array-SPADE approach."
+          ],
+          "papers": [
+            {
+              "title": "Quantum-Limited Subdiffraction Telescopy Requires Genuine Multi-Telescope Interference",
+              "href": "https://arxiv.org/abs/2606.27276",
+              "note": "The ultimate limits of distributed subdiffraction imaging and the role of genuine multi-telescope interference."
+            },
+            {
+              "title": "Criteria for Optimal Entanglement-Assisted Long Baseline Telescopy",
+              "href": "https://arxiv.org/abs/2501.16670",
+              "note": "Astronomical imaging under superselection-rule constraints and protocols that approach the optimal quantum limit."
+            },
+            {
+              "title": "Astronomical Interferometry Using Continuous-Variable Quantum Teleportation",
+              "href": "https://arxiv.org/abs/2308.12851",
+              "note": "A continuous-variable teleportation architecture for long-baseline interferometry."
+            },
+            {
+              "title": "Temporally Localized Quantum Operations on Continuous-Wave Thermal Light",
+              "href": "https://arxiv.org/abs/2412.17223",
+              "note": "A temporal-mode framework for processing continuous-wave thermal light in sensing and astronomy."
+            },
+            {
+              "title": "Superresolution in Interferometric Imaging of Strong Thermal Sources",
+              "href": "https://arxiv.org/abs/2012.14026",
+              "note": "Interferometric superresolution beyond conventional direct-imaging limits."
+            }
+          ]
+        },
+        {
+          "title": "Quantum communication and resource distribution",
+          "paragraphs": [
+            "I study how quantum information and nonclassical resources can be transmitted, certified, and used across noisy and experimentally realistic networks. My interests include frequency-bin encodings, multimode free-space channels, entanglement distribution, and communication protocols based on limited quantum resources."
+          ],
+          "papers": [
+            {
+              "title": "Time-Resolved Certification of Frequency-Bin Entanglement Over Multi-Mode Channels",
+              "href": "https://arxiv.org/abs/2508.10200",
+              "note": "Certification of high-dimensional frequency-bin entanglement transmitted through multimode channels."
+            },
+            {
+              "title": "Feasibility Study of Frequency-Encoded Photonic Qubits Over a Free-Space Channel",
+              "href": "https://arxiv.org/abs/2412.06104",
+              "note": "Transmission and decoding of frequency-bin qubits over fluctuating free-space links."
+            },
+            {
+              "title": "Information Carried by a Single Particle in Quantum Multiple-Access Channels",
+              "href": "https://arxiv.org/abs/2301.02513",
+              "note": "Communication rates and quantum advantages in multiple-access channels constructed from a single particle."
+            },
+            {
+              "title": "Channel Activation of CHSH Nonlocality",
+              "href": "https://arxiv.org/abs/1911.06349",
+              "note": "How network structure can activate nonlocal resources that are inaccessible through individual noisy channels."
+            }
+          ]
+        },
+        {
+          "title": "Real-world quantum-network testbeds",
+          "paragraphs": [
+            "I have also helped lead the development of realistic quantum-network links that serve as testbeds for quantum networking in practice. This work connects photon-source engineering, fiber transmission, entanglement distribution, control systems, and public-facing quantum-science infrastructure."
+          ],
+          "papers": [
+            {
+              "title": "Public Quantum Network: The First Node",
+              "href": "https://arxiv.org/abs/2410.06398",
+              "note": "A metropolitan quantum-network node connecting the University of Illinois Urbana–Champaign with the Urbana Free Library."
+            },
+            {
+              "title": "Dual-Pump Approach to Photon-Pair Generation",
+              "href": "https://arxiv.org/abs/1904.05278",
+              "note": "Experimental engineering and characterization of photonic quantum sources."
+            },
+            {
+              "title": "Fiber-Based Photon-Pair Generation",
+              "href": "https://arxiv.org/abs/2212.13652",
+              "note": "A tutorial treatment of spontaneous four-wave mixing and photon-pair engineering in optical fibers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broader-directions",
+      "title": "Broader Directions in Quantum Information and AI for Quantum Science",
+      "paragraphs": [
+        "I am broadly interested in other areas of quantum information science, particularly quantum Shannon theory, quantum error correction, quantum learning theory, and the principles governing information processing across different physical platforms. I would like to deepen my understanding of experimental architectures beyond optics and investigate which ideas and resources can be transferred between platforms.",
+        "I am also interested in the emerging role of artificial intelligence in quantum science. AI systems may become useful collaborators for literature synthesis, analytic and numerical exploration, hypothesis generation, and the discovery of unexpected connections between different areas of physics. At the same time, frontier problems in quantum science provide demanding tests of whether an AI system can perform sustained scientific reasoning rather than reproduce familiar patterns.",
+        "My work on [CritPt: A Frontier Physics Research Benchmark](https://arxiv.org/abs/2509.26574) contributes to evaluating AI reasoning on research-level physics problems. Looking forward, I am interested in developing AI-assisted approaches that strengthen physical understanding, help researchers explore difficult problems, and support—rather than obscure—the conceptual reasoning at the heart of quantum science."
+      ],
+      "papersHeading": "Selected related work",
+      "papers": [],
+      "subthemes": []
+    }
+  ]
+}

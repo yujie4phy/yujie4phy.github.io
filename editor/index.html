@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edit My Website</title>
+    <link rel="stylesheet" href="/editor.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">LOCAL WEBSITE STUDIO</p>
+        <h1>Edit My Website</h1>
+        <p class="header-copy">Change the content without touching the design.</p>
+      </div>
+      <div class="header-actions">
+        <a class="button secondary" href="https://yujie4phy.github.io" target="_blank" rel="noreferrer">
+          View public website ↗
+        </a>
+        <button class="button primary" id="preview-button" type="button">Build preview</button>
+      </div>
+    </header>
+
+    <div class="app-layout">
+      <aside class="sidebar">
+        <nav id="section-tabs" aria-label="Website sections"></nav>
+        <div class="publish-card">
+          <p class="eyebrow">WHEN READY</p>
+          <h2>Publish with GitHub Desktop</h2>
+          <ol>
+            <li>Save each section you changed.</li>
+            <li>Open this folder in GitHub Desktop.</li>
+            <li>Write a short summary and click <strong>Commit to main</strong>.</li>
+            <li>Click <strong>Push origin</strong>.</li>
+          </ol>
+          <p>GitHub will rebuild the public website automatically.</p>
+        </div>
+      </aside>
+
+      <main class="editor-main">
+        <section class="section-intro">
+          <div>
+            <p class="eyebrow" id="section-kicker">CONTENT</p>
+            <h2 id="section-title">Loading…</h2>
+            <p id="section-description"></p>
+          </div>
+          <div class="save-area">
+            <span id="save-state" aria-live="polite">Loading content…</span>
+            <button class="button primary" id="save-button" type="button" disabled>Save section</button>
+          </div>
+        </section>
+
+        <section id="editor-content" class="editor-content" aria-live="polite"></section>
+
+        <section id="files-panel" class="files-panel" hidden>
+          <article class="upload-card">
+            <div>
+              <h3>Portrait</h3>
+              <p>Choose a JPEG photo. It will replace the portrait on the About page.</p>
+            </div>
+            <label class="file-picker">
+              <span>Choose JPEG</span>
+              <input id="portrait-file" type="file" accept=".jpg,.jpeg,image/jpeg" />
+            </label>
+          </article>
+
+          <article class="upload-card">
+            <div>
+              <h3>Curriculum vitae</h3>
+              <p>Choose a PDF. The CV link will continue to work automatically.</p>
+            </div>
+            <label class="file-picker">
+              <span>Choose PDF</span>
+              <input id="cv-file" type="file" accept=".pdf,application/pdf" />
+            </label>
+          </article>
+
+          <article class="upload-card slide-upload-card">
+            <div>
+              <h3>Talk slides</h3>
+              <p>
+                Upload a PowerPoint deck. To replace an existing deck, give the new file the
+                same filename shown below.
+              </p>
+              <div id="slide-list" class="slide-list"></div>
+            </div>
+            <label class="file-picker">
+              <span>Choose PowerPoint</span>
+              <input
+                id="slides-file"
+                type="file"
+                accept=".pptx,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+              />
+            </label>
+            <div id="slide-link-result" class="slide-link-result" hidden></div>
+          </article>
+        </section>
+
+        <section id="preview-panel" class="preview-panel" hidden>
+          <div class="preview-toolbar">
+            <div>
+              <p class="eyebrow">LOCAL PREVIEW</p>
+              <strong>Your saved changes</strong>
+            </div>
+            <button class="icon-button" id="close-preview" type="button" aria-label="Close preview">×</button>
+          </div>
+          <iframe id="preview-frame" title="Website preview"></iframe>
+        </section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <dialog id="build-dialog">
+      <div class="spinner" aria-hidden="true"></div>
+      <h2>Preparing your preview</h2>
+      <p>This usually takes less than a minute.</p>
+      <pre id="build-output"></pre>
+    </dialog>
+
+    <script src="/editor.js" defer></script>
+  </body>
+</html>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import about from "../content/about.json";
 import { PublicationList } from "./components/PublicationList";
+import { RichText } from "./components/RichText";
 import { SiteShell } from "./components/SiteShell";
 import { profile, publications } from "./site-data";
 
@@ -22,31 +24,11 @@ export default function Home() {
 
       <section className="home-intro-grid" aria-label="About">
         <div className="prose intro-copy">
-          <p>
-            I am a postdoctoral fellow at the{" "}
-            <a href="https://uwaterloo.ca/institute-for-quantum-computing/">
-              Institute for Quantum Computing
-            </a>{" "}
-            at the University of Waterloo and am also associated with the{" "}
-            <a href="https://perimeterinstitute.ca/">Perimeter Institute for Theoretical Physics</a>.
-            I received my PhD in Physics from the University of Illinois at
-            Urbana–Champaign and my BSc in Physics from Kuang Yaming Honors School
-            at Nanjing University.
-          </p>
-          <p>
-            My research lies at the intersection of quantum foundations, quantum
-            information theory, and quantum optics. I investigate operational
-            notions of nonclassicality—including generalized noncontextuality,
-            measurement incompatibility, entanglement, quantum steering, and
-            nonlocality—with a focus on their relationships, certification, and
-            quantification. I also use these insights into nonclassical resources
-            to develop practical protocols for quantum metrology and communication
-            in quantum networks. Publications and preprints are available through{" "}
-            <a href="https://arxiv.org/a/zhang_y_54.html">arXiv</a> and{" "}
-            <a href="https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en">
-              Google Scholar
-            </a>.
-          </p>
+          {about.paragraphs.map((paragraph) => (
+            <p key={paragraph}>
+              <RichText text={paragraph} />
+            </p>
+          ))}
         </div>
 
         <aside className="profile-portrait" aria-label={`Portrait of ${profile.givenName} ${profile.familyName}`}>
