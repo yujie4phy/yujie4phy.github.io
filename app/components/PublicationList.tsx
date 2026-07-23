@@ -1,19 +1,17 @@
 import { profile, type Publication } from "../site-data";
 
 const selfAuthorName = `${profile.givenName} ${profile.familyName}`;
+const selfAuthorAliases = [selfAuthorName, `Y. ${profile.familyName}`];
 
 function highlightSelfAuthor(authors: string) {
-  const parts = authors.split(selfAuthorName);
-
-  return parts.flatMap((part, index) =>
-    index < parts.length - 1
-      ? [
-          part,
-          <strong className="self-author" key={`${selfAuthorName}-${index}`}>
-            {selfAuthorName}
-          </strong>,
-        ]
-      : [part],
+  return authors.split(/(Yujie Zhang|Y\. Zhang)/g).map((part, index) =>
+    selfAuthorAliases.includes(part) ? (
+      <strong className="self-author" key={`${part}-${index}`}>
+        {part}
+      </strong>
+    ) : (
+      part
+    ),
   );
 }
 
