@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PublicationList } from "./components/PublicationList";
 import { SiteShell } from "./components/SiteShell";
 import { profile, publications } from "./site-data";
@@ -34,24 +35,33 @@ export default function Home() {
 
       <section className="prose intro-copy" aria-label="About">
         <p>
-          I am a postdoctoral researcher working in quantum information and
-          quantum computation. Replace this opening with your current position,
-          institution, research group, and a short description of your academic
-          path.
+          I am a postdoctoral fellow at the{" "}
+          <a href="https://uwaterloo.ca/institute-for-quantum-computing/">
+            Institute for Quantum Computing
+          </a>{" "}
+          at the University of Waterloo and the{" "}
+          <a href="https://perimeterinstitute.ca/">Perimeter Institute for Theoretical Physics</a>.
+          I received my PhD in Physics from the University of Illinois at
+          Urbana–Champaign and my BSc in Physics from Nanjing University.
         </p>
         <p>
-          My research interests include <span className="accent-text">quantum
-          information theory</span>, quantum algorithms, quantum resources, and
-          the mathematical structures underlying quantum computation. This
-          paragraph is ready for your specific research questions and methods.
+          My research brings together <span className="accent-text">quantum foundations</span>,
+          quantum information theory, and quantum optics. I study operational
+          notions of nonclassicality and entanglement certification, while also
+          developing practical protocols for higher-dimensional quantum networks
+          and distributed quantum metrology.
         </p>
         <p>
-          My papers will be available through <a href="https://arxiv.org/">arXiv</a>
-          {" "}and <a href="https://scholar.google.com/">Google Scholar</a>. I can
-          also share research software and supporting material through GitHub.
+          My current work includes generalized contextuality, frequency-bin
+          quantum systems, quantum-enhanced long-baseline imaging, and
+          astronomical interferometry. Publications and preprints are available
+          through <a href="https://arxiv.org/a/zhang_y_54.html">arXiv</a> and{" "}
+          <a href="https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en">
+            Google Scholar
+          </a>.
         </p>
         <p>
-          Contact: <span className="placeholder-text">{profile.email}</span>
+          Contact: <a href={`mailto:${profile.email}`}>{profile.email}</a>
         </p>
       </section>
 
@@ -74,7 +84,7 @@ export default function Home() {
       <section className="section-block" aria-labelledby="selected-publications">
         <div className="section-heading-row">
           <h2 id="selected-publications">selected publications</h2>
-          <a className="text-link" href="/publications">view all →</a>
+          <Link className="text-link" href="/publications">view all →</Link>
         </div>
         <PublicationList publications={selected} compact />
       </section>

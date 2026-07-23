@@ -335,6 +335,7 @@ summary {
 .publication h3,
 .timeline-entry h3,
 .feature-panel h2,
+.feature-panel h3,
 .talk-row h2 {
   margin: 18px 0 8px;
   font-weight: 650;
@@ -637,9 +638,62 @@ summary {
   box-shadow: var(--shadow);
 }
 
-.feature-panel h2 {
+.feature-panel h2,
+.feature-panel h3 {
   margin-top: 68px;
   font-size: 1.35rem;
+}
+
+.feature-panel h3 a,
+.timeline-entry h3 a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.feature-panel h3 a:hover,
+.timeline-entry h3 a:hover {
+  color: var(--accent);
+}
+
+.outreach-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mentorship-section {
+  margin-top: 84px;
+}
+
+.section-note {
+  max-width: 720px;
+  margin: -12px 0 28px;
+  color: var(--muted);
+}
+
+.mentorship-list {
+  border-top: 1px solid var(--border);
+}
+
+.mentorship-entry {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 28px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mentorship-entry h3 {
+  margin: 0 0 4px;
+  font-size: 1.08rem;
+}
+
+.mentorship-entry p {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.mentorship-entry .mentorship-meta {
+  color: var(--foreground);
+  font-size: 0.9rem;
 }
 
 .site-footer {
@@ -701,12 +755,14 @@ summary {
     min-height: auto;
   }
 
-  .feature-panel h2 {
+  .feature-panel h2,
+  .feature-panel h3 {
     margin-top: 34px;
   }
 
   .publication,
-  .timeline-entry {
+  .timeline-entry,
+  .mentorship-entry {
     grid-template-columns: 1fr;
     gap: 14px;
   }

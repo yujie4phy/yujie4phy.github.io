@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 import { profile } from "../site-data";
 import { ThemeToggle } from "./ThemeToggle";
@@ -54,14 +55,14 @@ export function SiteShell({
 
           <nav className="main-nav" aria-label="Main navigation">
             {navigation.map((item) => (
-              <a
+              <Link
                 className={item.id === current ? "active" : undefined}
                 href={item.href}
                 key={item.id}
                 aria-current={item.id === current ? "page" : undefined}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <ThemeToggle />
           </nav>
@@ -71,9 +72,9 @@ export function SiteShell({
       <main className="site-main">
         {pageTitle ? (
           <header className="page-heading">
-            <a className="name-link" href="/">
+            <Link className="name-link" href="/">
               {profile.givenName} {profile.familyName}
-            </a>
+            </Link>
             <h1>{pageTitle}</h1>
             {pageDescription ? <p>{pageDescription}</p> : null}
           </header>

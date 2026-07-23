@@ -9,17 +9,18 @@ export async function generateMetadata(): Promise<Metadata> {
   const socialImage = `${protocol}://${host}/og.png`;
 
   return {
-    title: "Quantum Information Researcher",
-    description: "Academic profile, research interests, publications, talks, and CV.",
+    title: "Yujie Zhang — Quantum Information",
+    description:
+      "Yujie Zhang is a postdoctoral fellow working on quantum foundations, quantum information, quantum networks, and quantum metrology.",
     openGraph: {
-      title: "Your Name — Quantum Information",
+      title: "Yujie Zhang — Quantum Information",
       description: "Research, publications, talks, and academic CV.",
       type: "profile",
-      images: [{ url: socialImage, width: 1536, height: 1024, alt: "Your Name — Quantum Information" }],
+      images: [{ url: socialImage, width: 1536, height: 1024, alt: "Yujie Zhang — Quantum Information" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Your Name — Quantum Information",
+      title: "Yujie Zhang — Quantum Information",
       description: "Research, publications, talks, and academic CV.",
       images: [socialImage],
     },

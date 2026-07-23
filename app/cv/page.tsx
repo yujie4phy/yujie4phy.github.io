@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SiteShell } from "../components/SiteShell";
-import { CareerEntry, education, employment, profile } from "../site-data";
+import { awards, CareerEntry, education, employment, profile } from "../site-data";
 
 export const metadata: Metadata = { title: `CV — ${profile.givenName} ${profile.familyName}` };
 
@@ -28,19 +28,33 @@ function CareerSection({ title, entries }: { title: string; entries: CareerEntry
 
 export default function CVPage() {
   return (
-    <SiteShell current="cv" pageTitle="CV" pageDescription="Employment and education">
+    <SiteShell
+      current="cv"
+      pageTitle="CV"
+      pageDescription="Appointments, education, and selected distinctions"
+    >
       <div className="page-intro-action">
-        <p>A complete PDF version can be linked here when you add your CV.</p>
-        {profile.cvFile ? (
-          <a className="primary-button" href={profile.cvFile}>Download full CV</a>
-        ) : (
-          <span className="primary-button is-disabled" title="Add your CV file path in site-data.ts">
-            PDF coming soon
-          </span>
-        )}
+        <p>Download the complete CV for research experience, mentorship, outreach, and publications.</p>
+        <a className="primary-button" href={profile.cvFile}>Download full CV</a>
       </div>
       <CareerSection title="Employment" entries={employment} />
       <CareerSection title="Education" entries={education} />
+      <section className="cv-section" aria-labelledby="awards-heading">
+        <h2 id="awards-heading">Awards &amp; Honors</h2>
+        <div className="timeline">
+          {awards.map((award) => (
+            <article className="timeline-entry" key={`${award.year}-${award.title}`}>
+              <div className="timeline-date">{award.year}</div>
+              <div>
+                <h3>
+                  {award.href ? <a href={award.href}>{award.title}</a> : award.title}
+                </h3>
+                <p>{award.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
     </SiteShell>
   );
 }

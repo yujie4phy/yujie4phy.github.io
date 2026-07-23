@@ -21,7 +21,7 @@ export function PublicationList({
             <p className="citation">{publication.citation}</p>
             <div className="paper-actions">
               <details>
-                <summary>Abs</summary>
+                <summary>Summary</summary>
                 <p>{publication.abstract}</p>
               </details>
               {publication.links.map((link) =>

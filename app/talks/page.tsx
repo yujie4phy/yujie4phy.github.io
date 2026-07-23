@@ -12,8 +12,8 @@ export default function TalksPage() {
       pageDescription="Selected presentations, seminars, and conference talks"
     >
       <p className="page-lead">
-        Add slides and recordings here. A complete list of presentations can also
-        be included in the downloadable CV.
+        Talks listed in the current CV. Exact dates, locations, slides, and
+        recordings can be added when those links are available.
       </p>
       <div className="talks-table" role="table" aria-label="Selected talks">
         <div className="talk-row talk-header" role="row">
