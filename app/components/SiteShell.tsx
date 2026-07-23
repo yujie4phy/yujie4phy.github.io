@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import { FaEnvelope, FaGithub, FaXTwitter } from "react-icons/fa6";
+import { SiArxiv, SiGooglescholar, SiOrcid } from "react-icons/si";
 import { profile } from "../site-data";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -12,6 +14,15 @@ const navigation: { label: string; href: string; id: Section }[] = [
   { label: "publications", href: "/publications", id: "publications" },
   { label: "talks", href: "/talks", id: "talks" },
 ];
+
+const profileIcons = {
+  email: FaEnvelope,
+  scholar: SiGooglescholar,
+  orcid: SiOrcid,
+  arxiv: SiArxiv,
+  twitter: FaXTwitter,
+  github: FaGithub,
+};
 
 export function SiteShell({
   children,
@@ -29,8 +40,10 @@ export function SiteShell({
       <header className="site-header">
         <div className="header-inner">
           <div className="profile-links" aria-label="Academic profiles">
-            {profile.links.map((link) =>
-              link.href ? (
+            {profile.links.map((link) => {
+              const Icon = profileIcons[link.icon];
+
+              return link.href ? (
                 <a
                   className="profile-link"
                   href={link.href}
@@ -38,19 +51,19 @@ export function SiteShell({
                   aria-label={link.label}
                   title={link.label}
                 >
-                  {link.shortLabel}
+                  <Icon aria-hidden="true" />
                 </a>
               ) : (
                 <span
                   className="profile-link is-placeholder"
                   key={link.label}
                   aria-label={`${link.label} link not added yet`}
-                  title={`Add your ${link.label} link in site-data.ts`}
+                  title={`${link.label} profile link needed`}
                 >
-                  {link.shortLabel}
+                  <Icon aria-hidden="true" />
                 </span>
-              ),
-            )}
+              );
+            })}
           </div>
 
           <nav className="main-nav" aria-label="Main navigation">

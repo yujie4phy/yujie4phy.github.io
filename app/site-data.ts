@@ -1,6 +1,6 @@
 export type ProfileLink = {
   label: string;
-  shortLabel: string;
+  icon: "email" | "scholar" | "orcid" | "arxiv" | "twitter" | "github";
   href: string;
 };
 
@@ -69,24 +69,36 @@ export const profile = {
   lastUpdated: "July 2026",
   cvFile: "/Yujie-Zhang-CV.pdf",
   links: [
-    { label: "Email", shortLabel: "@", href: "mailto:yujie.zhang1@uwaterloo.ca" },
     {
-      label: "ORCID",
-      shortLabel: "iD",
-      href: "https://orcid.org/0000-0002-7858-7476",
+      label: "Email",
+      icon: "email",
+      href: "mailto:yujie.zhang1@uwaterloo.ca",
     },
     {
       label: "Google Scholar",
-      shortLabel: "GS",
+      icon: "scholar",
       href: "https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en",
     },
-    { label: "GitHub", shortLabel: "GH", href: "https://github.com/yujie4phy" },
     {
-      label: "IQC profile",
-      shortLabel: "IQC",
-      href: "https://uwaterloo.ca/institute-for-quantum-computing/contacts/yujie-zhang",
+      label: "ORCID",
+      icon: "orcid",
+      href: "https://orcid.org/0000-0002-7858-7476",
     },
-    { label: "arXiv", shortLabel: "aX", href: "https://arxiv.org/a/zhang_y_54.html" },
+    {
+      label: "arXiv",
+      icon: "arxiv",
+      href: "https://arxiv.org/a/zhang_y_54.html",
+    },
+    {
+      label: "Twitter / X",
+      icon: "twitter",
+      href: "",
+    },
+    {
+      label: "GitHub",
+      icon: "github",
+      href: "https://github.com/yujie4phy",
+    },
   ] satisfies ProfileLink[],
   interests: [
     {
