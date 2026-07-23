@@ -29,11 +29,15 @@ export function SiteShell({
   current,
   pageTitle,
   pageDescription,
+  pageTitleAction,
+  pageHeadingVariant = "default",
 }: {
   children: ReactNode;
   current: Section;
   pageTitle?: string;
   pageDescription?: string;
+  pageTitleAction?: ReactNode;
+  pageHeadingVariant?: "default" | "compact";
 }) {
   return (
     <div className="site-frame">
@@ -84,11 +88,18 @@ export function SiteShell({
 
       <main className="site-main">
         {pageTitle ? (
-          <header className="page-heading">
+          <header className={`page-heading ${pageHeadingVariant}`}>
             <Link className="name-link" href="/">
               {profile.givenName} {profile.familyName}
             </Link>
-            <h1>{pageTitle}</h1>
+            {pageTitleAction ? (
+              <div className="page-title-row">
+                <h1>{pageTitle}</h1>
+                {pageTitleAction}
+              </div>
+            ) : (
+              <h1>{pageTitle}</h1>
+            )}
             {pageDescription ? <p>{pageDescription}</p> : null}
           </header>
         ) : null}

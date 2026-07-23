@@ -12,14 +12,13 @@ export default function TalksPage() {
       pageDescription="Selected presentations, seminars, and conference talks"
     >
       <p className="page-lead">
-        Talks listed in the current CV. Exact dates, locations, slides, and
-        recordings can be added when those links are available.
+        Selected conference and seminar presentations. Slides are available
+        for the talks marked below.
       </p>
       <div className="talks-table" role="table" aria-label="Selected talks">
         <div className="talk-row talk-header" role="row">
           <span role="columnheader">Date</span>
           <span role="columnheader">Talk</span>
-          <span role="columnheader">Location</span>
         </div>
         {talks.map((talk) => (
           <article className="talk-row" role="row" key={`${talk.date}-${talk.title}`}>
@@ -30,14 +29,19 @@ export default function TalksPage() {
               <div className="talk-actions">
                 {talk.links.map((link) =>
                   link.href ? (
-                    <a href={link.href} key={link.label}>{link.label}</a>
+                    <a
+                      href={link.href}
+                      key={link.label}
+                      download={link.label === "Slides" ? true : undefined}
+                    >
+                      {link.label}
+                    </a>
                   ) : (
                     <span className="paper-link is-disabled" key={link.label}>{link.label}</span>
                   ),
                 )}
               </div>
             </div>
-            <span className="talk-location" role="cell">{talk.location}</span>
           </article>
         ))}
       </div>

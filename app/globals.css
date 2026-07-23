@@ -433,6 +433,38 @@ summary {
   line-height: 0.95;
 }
 
+.page-heading.compact h1 {
+  font-size: clamp(2.3rem, 5vw, 3.6rem);
+}
+
+.page-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.cv-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.cv-download-link:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cv-download-link svg {
+  width: 0.78rem;
+  height: 0.78rem;
+}
+
 .page-heading p {
   max-width: 640px;
   margin: 18px 0 0;
@@ -454,36 +486,6 @@ summary {
 .year-section > h2 {
   margin-bottom: 18px;
   color: var(--accent);
-}
-
-.page-intro-action {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 68px;
-  padding: 22px 24px;
-  background: var(--surface-soft);
-}
-
-.page-intro-action p {
-  margin: 0;
-}
-
-.primary-button {
-  flex: none;
-  display: inline-flex;
-  padding: 10px 16px;
-  background: var(--accent);
-  color: #fff;
-  font-size: 0.82rem;
-  font-weight: 750;
-  text-decoration: none;
-}
-
-.primary-button:hover {
-  background: var(--accent-strong);
-  color: #fff;
 }
 
 .cv-section + .cv-section {
@@ -533,7 +535,7 @@ summary {
 
 .talk-row {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr) 190px;
+  grid-template-columns: 100px minmax(0, 1fr);
   gap: 28px;
   align-items: start;
   padding: 0;
@@ -561,11 +563,6 @@ summary {
 .talk-date {
   color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-
-.talk-location {
-  color: var(--muted);
-  font-size: 0.9rem;
 }
 
 .others-grid {
@@ -671,14 +668,6 @@ summary {
   .talk-row {
     grid-template-columns: 88px minmax(0, 1fr);
   }
-
-  .talk-row .talk-location {
-    grid-column: 2;
-  }
-
-  .talk-header span:last-child {
-    display: none;
-  }
 }
 
 @media (max-width: 560px) {
@@ -722,7 +711,6 @@ summary {
     align-items: flex-end;
   }
 
-  .page-intro-action,
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
@@ -734,11 +722,7 @@ summary {
     gap: 8px;
   }
 
-  .talk-row .talk-location {
-    grid-column: 1;
-  }
-
-  .talk-header span:not(:nth-child(2)) {
+  .talk-header span:first-child {
     display: none;
   }
 }

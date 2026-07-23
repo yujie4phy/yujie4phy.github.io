@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FaPaperclip } from "react-icons/fa6";
 import { SiteShell } from "../components/SiteShell";
 import { awards, CareerEntry, education, employment, profile } from "../site-data";
 
@@ -32,11 +33,18 @@ export default function CVPage() {
       current="cv"
       pageTitle="CV"
       pageDescription="Appointments, education, and selected distinctions"
+      pageHeadingVariant="compact"
+      pageTitleAction={
+        <a
+          className="cv-download-link"
+          href={profile.cvFile}
+          aria-label="Download CV as a PDF"
+        >
+          <FaPaperclip aria-hidden="true" />
+          <span>PDF</span>
+        </a>
+      }
     >
-      <div className="page-intro-action">
-        <p>Download the complete CV for research experience, mentorship, outreach, and publications.</p>
-        <a className="primary-button" href={profile.cvFile}>Download full CV</a>
-      </div>
       <CareerSection title="Employment" entries={employment} />
       <CareerSection title="Education" entries={education} />
       <section className="cv-section" aria-labelledby="awards-heading">

@@ -574,11 +574,11 @@ export const mentorship: Mentorship[] = [
 
 export const outreach: Outreach[] = [
   {
-    year: "2023",
+    year: "11/2023",
     title: "Public Quantum Network at Urbana Free Library",
     description:
       "Led the creation of a public-facing quantum-network node distributing entangled photons from UIUC to a local library and connecting research with education.",
-    href: "https://iquist.illinois.edu/pqn",
+    href: "https://iquist.illinois.edu/outreach/pqn/people",
   },
   {
     year: "2023",
@@ -595,35 +595,60 @@ export const talks: Talk[] = [
     title: "A Paradigm for Entanglement Certification Using Noncontextuality Inequalities",
     event: "Foxconn",
     location: "—",
-    links: [],
+    links: [
+      {
+        label: "Slides",
+        href: "/slides/entanglement-certification-noncontextuality-inequalities.pptx",
+      },
+    ],
   },
   {
     date: "2025",
     title: "Criteria for Optimal Entanglement-Enhanced Long Baseline Imaging Protocols",
     event: "AQIS",
     location: "—",
-    links: [],
+    links: [
+      {
+        label: "Slides",
+        href: "/slides/criteria-optimal-entanglement-enhanced-long-baseline-imaging.pptx",
+      },
+    ],
   },
   {
     date: "2025",
     title: "Defining Nonclassicality for Individual Quantum Processes",
     event: "QPL",
     location: "—",
-    links: [],
+    links: [
+      {
+        label: "Slides",
+        href: "/slides/defining-nonclassicality-individual-quantum-processes.pptx",
+      },
+    ],
   },
   {
     date: "2024",
     title: "Exact Steering Bound for Two-Qubit Werner States",
     event: "QIP",
     location: "—",
-    links: [],
+    links: [
+      {
+        label: "Slides",
+        href: "/slides/exact-steering-bound-two-qubit-werner-states.pptx",
+      },
+    ],
   },
   {
     date: "2023",
     title: "Quantum-Enhanced Interferometric Imaging",
     event: "Quantum 2.0",
     location: "—",
-    links: [],
+    links: [
+      {
+        label: "Slides",
+        href: "/slides/quantum-enhanced-interferometric-imaging.pptx",
+      },
+    ],
   },
   {
     date: "2022",
