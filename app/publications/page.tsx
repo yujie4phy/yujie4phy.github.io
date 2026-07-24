@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import publicationsPage from "../../content/publications-page.json";
 import { PublicationList } from "../components/PublicationList";
+import { RichText } from "../components/RichText";
 import { SiteShell } from "../components/SiteShell";
 import { profile, publications } from "../site-data";
 
@@ -16,16 +18,16 @@ export default function PublicationsPage() {
     <SiteShell
       current="publications"
       pageTitle="publications"
-      pageDescription="Publications in reverse chronological order"
+      pageDescription={publicationsPage.pageDescription}
       pageHeadingVariant="compact"
     >
-      <p className="page-lead">
-        Papers and preprints in reverse chronological order. See also{" "}
-        <a href="https://arxiv.org/a/zhang_y_54.html">arXiv</a> and{" "}
-        <a href="https://scholar.google.com/citations?user=nbA1QlUAAAAJ&hl=en">
-          Google Scholar
-        </a>. An asterisk marks co-first authorship.
-      </p>
+      <div className="page-lead">
+        {publicationsPage.paragraphs.map((paragraph) => (
+          <p key={paragraph}>
+            <RichText text={paragraph} />
+          </p>
+        ))}
+      </div>
       {years.map((year) => (
         <section className="year-section" key={year} aria-labelledby={`year-${year}`}>
           <h2 id={`year-${year}`}>{year}</h2>

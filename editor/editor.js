@@ -21,6 +21,13 @@ const sectionDefinitions = [
     route: "/publications/",
   },
   {
+    key: "publications-page",
+    label: "Publication intro",
+    kicker: "PUBLICATION PAGE",
+    description: "Edit the publication summary, page subtitle, and profile links above the paper list.",
+    route: "/publications/",
+  },
+  {
     key: "talks",
     label: "Talks",
     kicker: "TALKS PAGE",

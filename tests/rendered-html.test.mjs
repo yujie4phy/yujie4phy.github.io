@@ -42,6 +42,9 @@ test("renders publication pages and highlights the profile author", async () => 
   assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
   assert.match(html, /<strong class="self-author">Yujie Zhang<\/strong>/);
   assert.match(html, /Physical Review Letters 132, 250201/);
+  assert.match(html, /My work spans quantum foundations, quantum information/);
+  assert.match(html, /two articles in <em>Physical Review X<\/em>/);
+  assert.match(html, /An asterisk denotes co-first authorship/);
 });
 
 test("ships the local editor and editable content files", async () => {
@@ -56,6 +59,7 @@ test("ships the local editor and editable content files", async () => {
     "about.json",
     "research.json",
     "publications.json",
+    "publications-page.json",
     "talks.json",
     "outreach.json",
     "cv.json",

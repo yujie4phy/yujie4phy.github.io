@@ -473,6 +473,14 @@ summary {
   font-size: 1.05rem;
 }
 
+.page-lead p {
+  margin: 0 0 18px;
+}
+
+.page-lead p:last-child {
+  margin-bottom: 0;
+}
+
 .year-section {
   margin-top: 64px;
 }

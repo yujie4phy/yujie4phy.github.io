@@ -1,6 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 
-const richTextPattern = /(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g;
+const richTextPattern = /(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g;
 
 export function RichText({ text }: { text: string }) {
   const parts = text.split(richTextPattern).filter(Boolean);
@@ -10,6 +10,10 @@ export function RichText({ text }: { text: string }) {
       {parts.map((part, index): ReactNode => {
         if (part.startsWith("**") && part.endsWith("**")) {
           return <strong key={`${index}-${part}`}>{part.slice(2, -2)}</strong>;
+        }
+
+        if (part.startsWith("*") && part.endsWith("*")) {
+          return <em key={`${index}-${part}`}>{part.slice(1, -1)}</em>;
         }
 
         const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);

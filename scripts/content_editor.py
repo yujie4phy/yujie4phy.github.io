@@ -33,6 +33,7 @@ SECTIONS = {
     "profile": "profile.json",
     "about": "about.json",
     "publications": "publications.json",
+    "publications-page": "publications-page.json",
     "research": "research.json",
     "talks": "talks.json",
     "outreach": "outreach.json",
