@@ -26,7 +26,7 @@
       "papers": [
         {
           "title": "Reassessing the Boundary between Classical and Nonclassical for Individual Quantum Processes",
-          "href": "https://arxiv.org/abs/2503.05884",
+          "href": "https://journals.aps.org/prx/abstract/10.1103/vqfz-wzjg",
           "note": "A unified, generalized-noncontextuality-based classical–nonclassical boundary for individual quantum processes."
         },
         {
@@ -36,17 +36,17 @@
         },
         {
           "title": "Entanglement Certification with Noncontextuality Inequalities",
-          "href": "https://arxiv.org/abs/2507.01122",
+          "href": "https://journals.aps.org/prx/accepted/10.1103/dxpr-wp6l",
           "note": "A hierarchy of noncontextuality inequalities connecting entanglement, steering, and Bell nonlocality."
         },
         {
           "title": "Exact Steering Bound for Two-Qubit Werner States",
-          "href": "https://arxiv.org/abs/2309.09960",
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.250201",
           "note": "The Werner-state steering threshold under general measurements and its connection to measurement incompatibility."
         },
         {
           "title": "Cost of Simulating Entanglement in Steering Scenarios",
-          "href": "https://arxiv.org/abs/2302.09060",
+          "href": "https://quantum-journal.org/papers/q-2025-10-31-1902/",
           "note": "The shared-randomness resources required to simulate entangled states in steering experiments."
         },
         {
