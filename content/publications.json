@@ -176,7 +176,7 @@
       },
       {
         "label": "Journal",
-        "href": "https://opg.optica.org/oe/viewmedia.cfm?uri=oe-33-19-40437&html=true"
+        "href": "https://doi.org/10.1364/OE.552079"
       }
     ]
   },
@@ -243,6 +243,10 @@
       {
         "label": "Project",
         "href": "https://iquist.illinois.edu/pqn"
+      },
+      {
+        "label": "Journal",
+        "href": "https://doi.org/10.1063/5.0241562"
       }
     ]
   },
@@ -404,7 +408,7 @@
       },
       {
         "label": "Journal",
-        "href": "https://pubmed.ncbi.nlm.nih.gov/31252837/"
+        "href": "https://doi.org/10.1364/OE.27.019050"
       }
     ]
   },

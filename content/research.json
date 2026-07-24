@@ -23,49 +23,81 @@
         "These questions are also important for quantum technology. Identifying the relevant nonclassical resource can explain the origin of a quantum advantage in an existing protocol. It can also suggest new measurements, encodings, and information-processing tasks that use the resource more effectively."
       ],
       "papersHeading": "Selected related work",
-      "papers": [
+      "papers": [],
+      "subthemes": [
         {
-          "title": "Reassessing the Boundary between Classical and Nonclassical for Individual Quantum Processes",
-          "href": "https://journals.aps.org/prx/abstract/10.1103/vqfz-wzjg",
-          "note": "A unified, generalized-noncontextuality-based classical–nonclassical boundary for individual quantum processes."
+          "title": "Leibnizian nonclassicality through generalized noncontextuality",
+          "paragraphs": [
+            "I use generalized noncontextuality to formulate a Leibnizian notion of classical explainability: operationally indistinguishable procedures should be represented identically in a classical model. This principle provides a unified way to define the classical–nonclassical boundary for individual quantum processes and to develop practical methods for certifying and quantifying nonclassicality."
+          ],
+          "papers": [
+            {
+              "title": "Reassessing the Boundary between Classical and Nonclassical for Individual Quantum Processes",
+              "href": "https://journals.aps.org/prx/abstract/10.1103/vqfz-wzjg",
+              "note": "A unified, generalized-noncontextuality-based classical–nonclassical boundary for individual quantum processes."
+            },
+            {
+              "title": "Quantifiers and Witnesses for the Nonclassicality of Measurements and of States",
+              "href": "https://arxiv.org/abs/2504.02944",
+              "note": "Quantitative measures and experimentally accessible witnesses for the nonclassicality of measurements and states."
+            },
+            {
+              "title": "Entanglement Certification with Noncontextuality Inequalities",
+              "href": "https://doi.org/10.1103/dxpr-wp6l",
+              "note": "A hierarchy of noncontextuality inequalities connecting entanglement, steering, and Bell nonlocality."
+            }
+          ]
         },
         {
-          "title": "Quantifiers and Witnesses for the Nonclassicality of Measurements and of States",
-          "href": "https://arxiv.org/abs/2504.02944",
-          "note": "Quantitative measures and experimentally accessible witnesses for the nonclassicality of measurements and states."
+          "title": "Measurement incompatibility and quantum steering",
+          "paragraphs": [
+            "I study the close operational relationship between measurement incompatibility and quantum steering. My work asks when general measurements reveal steering, how sharply the boundary between steerable and unsteerable correlations can be characterized, and what classical resources are required to simulate steering experiments."
+          ],
+          "papers": [
+            {
+              "title": "Exact Steering Bound for Two-Qubit Werner States",
+              "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.250201",
+              "note": "The exact Werner-state steering threshold under general measurements and its connection to measurement incompatibility."
+            },
+            {
+              "title": "Cost of Simulating Entanglement in Steering Scenarios",
+              "href": "https://quantum-journal.org/papers/q-2025-10-31-1902/",
+              "note": "The shared-randomness resources required to simulate entangled states in steering experiments."
+            }
+          ]
         },
         {
-          "title": "Entanglement Certification with Noncontextuality Inequalities",
-          "href": "https://journals.aps.org/prx/accepted/10.1103/dxpr-wp6l",
-          "note": "A hierarchy of noncontextuality inequalities connecting entanglement, steering, and Bell nonlocality."
+          "title": "Bell nonlocality",
+          "paragraphs": [
+            "I investigate Bell nonlocality both as a foundational signature of quantum theory and as a resource shaped by network structure. In particular, I am interested in activation phenomena, where quantum channels that are individually unable to distribute CHSH nonlocality can do so when used together."
+          ],
+          "papers": [
+            {
+              "title": "Channel Activation of CHSH Nonlocality",
+              "href": "https://iopscience.iop.org/article/10.1088/1367-2630/ab7bef/meta",
+              "note": "How channels that individually destroy CHSH nonlocality can activate nonlocal state distribution when used together."
+            }
+          ]
         },
         {
-          "title": "Exact Steering Bound for Two-Qubit Werner States",
-          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.250201",
-          "note": "The Werner-state steering threshold under general measurements and its connection to measurement incompatibility."
-        },
-        {
-          "title": "Cost of Simulating Entanglement in Steering Scenarios",
-          "href": "https://quantum-journal.org/papers/q-2025-10-31-1902/",
-          "note": "The shared-randomness resources required to simulate entangled states in steering experiments."
-        },
-        {
-          "title": "Channel Activation of CHSH Nonlocality",
-          "href": "https://arxiv.org/abs/1911.06349",
-          "note": "How channels that individually destroy CHSH nonlocality can activate nonlocal state distribution when used together."
-        },
-        {
-          "title": "Building Multiple Access Channels with a Single Particle",
-          "href": "https://arxiv.org/abs/2006.12475",
-          "note": "How single-particle superposition enables communication strategies unavailable to a classical particle."
-        },
-        {
-          "title": "Superresolution in Interferometric Imaging of Strong Thermal Sources",
-          "href": "https://arxiv.org/abs/2012.14026",
-          "note": "Measurements that overcome conventional resolution limitations in optical imaging."
+          "title": "Quantum protocols through the lens of foundational concepts",
+          "paragraphs": [
+            "Foundational concepts can clarify where a quantum advantage comes from and how to use it more effectively. I apply this perspective to communication protocols enabled by single-particle superposition and to entanglement-assisted sensing under superselection-rule constraints, where identifying the relevant physical restriction leads directly to sharper performance limits and improved protocols."
+          ],
+          "papers": [
+            {
+              "title": "Building Multiple Access Channels with a Single Particle",
+              "href": "https://quantum-journal.org/papers/q-2022-02-16-653/",
+              "note": "How single-particle superposition enables communication strategies unavailable to a classical particle."
+            },
+            {
+              "title": "Criteria for Optimal Entanglement-Assisted Long Baseline Telescopy",
+              "href": "https://doi.org/10.1103/PhysRevResearch.7.043278",
+              "note": "A superselection-rule framework for identifying optimal entanglement resources and precision limits in quantum telescopy."
+            }
+          ]
         }
-      ],
-      "subthemes": []
+      ]
     },
     {
       "id": "optical-networks",
@@ -90,22 +122,22 @@
             },
             {
               "title": "Criteria for Optimal Entanglement-Assisted Long Baseline Telescopy",
-              "href": "https://arxiv.org/abs/2501.16670",
+              "href": "https://doi.org/10.1103/PhysRevResearch.7.043278",
               "note": "Astronomical imaging under superselection-rule constraints and protocols that approach the optimal quantum limit."
             },
             {
               "title": "Astronomical Interferometry Using Continuous-Variable Quantum Teleportation",
-              "href": "https://arxiv.org/abs/2308.12851",
+              "href": "https://doi.org/10.1103/PhysRevResearch.7.023154",
               "note": "A continuous-variable teleportation architecture for long-baseline interferometry."
             },
             {
               "title": "Temporally Localized Quantum Operations on Continuous-Wave Thermal Light",
-              "href": "https://arxiv.org/abs/2412.17223",
+              "href": "https://journals.aps.org/prl/abstract/10.1103/y4v8-1wgm",
               "note": "A temporal-mode framework for processing continuous-wave thermal light in sensing and astronomy."
             },
             {
               "title": "Superresolution in Interferometric Imaging of Strong Thermal Sources",
-              "href": "https://arxiv.org/abs/2012.14026",
+              "href": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.104.022613",
               "note": "Interferometric superresolution beyond conventional direct-imaging limits."
             }
           ]
@@ -118,22 +150,22 @@
           "papers": [
             {
               "title": "Time-Resolved Certification of Frequency-Bin Entanglement Over Multi-Mode Channels",
-              "href": "https://arxiv.org/abs/2508.10200",
+              "href": "https://www.nature.com/articles/s41534-026-01183-5",
               "note": "Certification of high-dimensional frequency-bin entanglement transmitted through multimode channels."
             },
             {
               "title": "Feasibility Study of Frequency-Encoded Photonic Qubits Over a Free-Space Channel",
-              "href": "https://arxiv.org/abs/2412.06104",
+              "href": "https://doi.org/10.1364/OE.552079",
               "note": "Transmission and decoding of frequency-bin qubits over fluctuating free-space links."
             },
             {
               "title": "Information Carried by a Single Particle in Quantum Multiple-Access Channels",
-              "href": "https://arxiv.org/abs/2301.02513",
+              "href": "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.109.062420",
               "note": "Communication rates and quantum advantages in multiple-access channels constructed from a single particle."
             },
             {
               "title": "Channel Activation of CHSH Nonlocality",
-              "href": "https://arxiv.org/abs/1911.06349",
+              "href": "https://iopscience.iop.org/article/10.1088/1367-2630/ab7bef/meta",
               "note": "How network structure can activate nonlocal resources that are inaccessible through individual noisy channels."
             }
           ]
@@ -146,17 +178,17 @@
           "papers": [
             {
               "title": "Public Quantum Network: The First Node",
-              "href": "https://arxiv.org/abs/2410.06398",
+              "href": "https://doi.org/10.1063/5.0241562",
               "note": "A metropolitan quantum-network node connecting the University of Illinois Urbana–Champaign with the Urbana Free Library."
             },
             {
               "title": "Dual-Pump Approach to Photon-Pair Generation",
-              "href": "https://arxiv.org/abs/1904.05278",
+              "href": "https://doi.org/10.1364/OE.27.019050",
               "note": "Experimental engineering and characterization of photonic quantum sources."
             },
             {
               "title": "Fiber-Based Photon-Pair Generation",
-              "href": "https://arxiv.org/abs/2212.13652",
+              "href": "https://doi.org/10.1364/JOSAB.478008",
               "note": "A tutorial treatment of spontaneous four-wave mixing and photon-pair engineering in optical fibers."
             }
           ]

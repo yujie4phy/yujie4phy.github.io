@@ -23,6 +23,16 @@ test("renders research themes and related papers from content files", async () =
   assert.match(html, /id="nonclassicality"/);
   assert.match(html, /id="optical-networks"/);
   assert.match(html, /id="broader-directions"/);
+  assert.match(
+    html,
+    /Leibnizian nonclassicality through generalized noncontextuality/,
+  );
+  assert.match(html, /Measurement incompatibility and quantum steering/);
+  assert.match(html, /Bell nonlocality/);
+  assert.match(
+    html,
+    /Quantum protocols through the lens of foundational concepts/,
+  );
   assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
 });
 
