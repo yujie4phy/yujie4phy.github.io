@@ -17,7 +17,7 @@ test("renders the editable About content and profile links", async () => {
   assert.match(html, /selected publications/);
   assert.match(
     html,
-    /class="profile-photo"[^>]+width="175"[^>]+height="233"/,
+    /class="profile-photo"[^>]+width="175"[^>]+height="175"/,
   );
 });
 

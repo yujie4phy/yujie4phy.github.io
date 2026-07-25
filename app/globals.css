@@ -213,9 +213,10 @@ summary {
 
 .profile-photo {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   height: auto;
   display: block;
+  border-radius: 50%;
   border: 1px solid var(--border);
   background: var(--surface);
   box-shadow: var(--shadow);
