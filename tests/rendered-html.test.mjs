@@ -15,6 +15,10 @@ test("renders the editable About content and profile links", async () => {
   assert.match(html, /Perimeter Institute for Theoretical Physics/);
   assert.match(html, /https:\/\/x\.com\/Yujie4physics/);
   assert.match(html, /selected publications/);
+  assert.match(
+    html,
+    /class="profile-photo"[^>]+width="175"[^>]+height="233"/,
+  );
 });
 
 test("renders research themes and related papers from content files", async () => {
@@ -43,7 +47,7 @@ test("renders publication pages and highlights the profile author", async () => 
   assert.match(html, /<strong class="self-author">Yujie Zhang<\/strong>/);
   assert.match(html, /Physical Review Letters 132, 250201/);
   assert.match(html, /My work spans quantum foundations, quantum information/);
-  assert.match(html, /two articles in <em>Physical Review X<\/em>/);
+  assert.match(html, /Research articles and preprints across quantum information science/);
   assert.match(html, /An asterisk denotes co-first authorship/);
 });
 

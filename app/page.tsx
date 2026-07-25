@@ -38,8 +38,8 @@ export default function Home() {
             className="profile-photo"
             src="/yujie-zhang.jpg"
             alt={`Portrait of ${profile.givenName} ${profile.familyName}`}
-            width="230"
-            height="307"
+            width="175"
+            height="233"
           />
           <span className="profile-location">{profile.location}</span>
         </aside>

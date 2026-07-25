@@ -202,7 +202,7 @@ summary {
 
 .home-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 230px;
+  grid-template-columns: minmax(0, 1fr) 175px;
   gap: 32px;
   align-items: start;
 }
@@ -832,7 +832,7 @@ summary {
   }
 
   .profile-portrait {
-    max-width: 230px;
+    max-width: 175px;
   }
 
   .section-block {
