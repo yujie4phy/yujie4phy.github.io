@@ -24,19 +24,10 @@
       ],
       "figures": [
         {
-          "src": "/research/classical-process.png",
-          "alt": "Operational diagram asking whether an individual quantum process admits a classical ontological representation.",
-          "caption": "Classical explainability of an individual quantum process.",
-          "href": "https://journals.aps.org/prx/abstract/10.1103/vqfz-wzjg",
-          "width": 802,
-          "height": 802,
-          "wide": false
-        },
-        {
           "src": "/research/nonclassicality-hierarchy.png",
           "alt": "Nested hierarchy relating noncontextual, local, unsteerable, separable, classical, and quantum sets.",
           "caption": "Hierarchy connecting noncontextuality inequalities with entanglement, steering, and Bell nonlocality.",
-          "href": "https://doi.org/10.1103/dxpr-wp6l",
+          "href": "https://journals.aps.org/prx/accepted/10.1103/dxpr-wp6l",
           "width": 2406,
           "height": 1114,
           "wide": true

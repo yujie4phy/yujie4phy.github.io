@@ -694,8 +694,12 @@ summary {
 }
 
 .research-figure.wide {
-  flex-basis: 100%;
-  max-width: 780px;
+  position: relative;
+  left: 50%;
+  flex: 0 0 auto;
+  width: min(1000px, calc(100vw - 48px));
+  max-width: none;
+  transform: translateX(-50%);
 }
 
 .research-figure-image-link {
@@ -923,7 +927,10 @@ summary {
 
   .research-figure,
   .research-figure.wide {
+    position: static;
+    width: 100%;
     max-width: none;
+    transform: none;
   }
 
   .research-figure-image-link {
