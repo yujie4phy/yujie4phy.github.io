@@ -22,6 +22,26 @@
         "From a foundational perspective, this program aims to distinguish genuinely quantum phenomena from effects that can arise through classical mechanisms, such as incomplete information, epistemic restrictions, or limited operational access. Comparisons with broader post-quantum theories can also help reveal which features of nonclassicality are specific to quantum theory, which extend beyond it, and which structural principles constrain the correlations permitted by nature.",
         "These questions are also important for quantum technology. Identifying the relevant nonclassical resource can explain the origin of a quantum advantage in an existing protocol. It can also suggest new measurements, encodings, and information-processing tasks that use the resource more effectively."
       ],
+      "figures": [
+        {
+          "src": "/research/classical-process.png",
+          "alt": "Operational diagram asking whether an individual quantum process admits a classical ontological representation.",
+          "caption": "Classical explainability of an individual quantum process.",
+          "href": "https://journals.aps.org/prx/abstract/10.1103/vqfz-wzjg",
+          "width": 802,
+          "height": 802,
+          "wide": false
+        },
+        {
+          "src": "/research/nonclassicality-hierarchy.png",
+          "alt": "Nested hierarchy relating noncontextual, local, unsteerable, separable, classical, and quantum sets.",
+          "caption": "Hierarchy connecting noncontextuality inequalities with entanglement, steering, and Bell nonlocality.",
+          "href": "https://doi.org/10.1103/dxpr-wp6l",
+          "width": 2406,
+          "height": 1114,
+          "wide": true
+        }
+      ],
       "papersHeading": "Selected related work",
       "papers": [],
       "subthemes": [
@@ -69,7 +89,7 @@
         {
           "title": "Bell nonlocality",
           "paragraphs": [
-            "I investigate Bell nonlocality both as a foundational signature of quantum theory and as a resource shaped by network structure. In particular, I am interested in activation phenomena, where quantum channels that are individually unable to distribute CHSH nonlocality can do so when used together."
+            "I investigate activation phenomena, in which quantum channels that individually cannot distribute CHSH nonlocality can do so when used together."
           ],
           "papers": [
             {
@@ -105,6 +125,26 @@
       "paragraphs": [
         "My background spans both theory and experiment in optical quantum information. This training has given me a practical understanding of both the capabilities and the limitations of photonic quantum technologies.",
         "Photonic platforms face significant challenges as architectures for scalable, universal quantum computation, particularly when compared with leading solid-state platforms. However, photons are exceptionally well suited to transmitting quantum information and connecting distant systems. Optical quantum information processing therefore plays a central role in quantum communication, distributed quantum sensing, and metrology."
+      ],
+      "figures": [
+        {
+          "src": "/research/array-spade.png",
+          "alt": "Comparison of subdiffraction imaging strategies including single-aperture SPADE, pairwise local SPADE, and Array-SPADE.",
+          "caption": "Subdiffraction interferometric imaging and the Array-SPADE architecture.",
+          "href": "https://arxiv.org/abs/2606.27276",
+          "width": 1028,
+          "height": 1290,
+          "wide": false
+        },
+        {
+          "src": "/research/one-way-telescopy.png",
+          "alt": "One-way entanglement-assisted telescopy protocol with quantum processing at telescopes A and B and classical communication.",
+          "caption": "One-way, entanglement-assisted long-baseline interferometry.",
+          "href": "https://doi.org/10.1103/PhysRevResearch.7.043278",
+          "width": 1092,
+          "height": 856,
+          "wide": false
+        }
       ],
       "papersHeading": "Selected related work",
       "papers": [],
@@ -145,7 +185,7 @@
         {
           "title": "Quantum communication and resource distribution",
           "paragraphs": [
-            "I study how quantum information and nonclassical resources can be transmitted, certified, and used across noisy and experimentally realistic networks. My interests include frequency-bin encodings, multimode free-space channels, entanglement distribution, and communication protocols based on limited quantum resources."
+            "I study how quantum information and nonclassical resources can be transmitted, certified, and used across noisy and experimentally realistic networks. My interests include frequency-bin encodings used in multimode free-space channels, entanglement distribution, and communication protocols based on limited quantum resources."
           ],
           "papers": [
             {
@@ -200,9 +240,10 @@
       "title": "Broader Directions in Quantum Information and AI for Quantum Science",
       "paragraphs": [
         "I am broadly interested in other areas of quantum information science, particularly quantum Shannon theory, quantum error correction, quantum learning theory, and the principles governing information processing across different physical platforms. I would like to deepen my understanding of experimental architectures beyond optics and investigate which ideas and resources can be transferred between platforms.",
-        "I am also interested in the emerging role of artificial intelligence in quantum science. AI systems may become useful collaborators for literature synthesis, analytic and numerical exploration, hypothesis generation, and the discovery of unexpected connections between different areas of physics. At the same time, frontier problems in quantum science provide demanding tests of whether an AI system can perform sustained scientific reasoning rather than reproduce familiar patterns.",
+        "I am also interested in the emerging role of artificial intelligence in quantum science. AI has become a useful collaborator for literature synthesis, analytic and numerical exploration, hypothesis generation, and the discovery of unexpected connections between different areas of physics. At the same time, frontier problems in quantum science provide demanding tests of whether an AI can perform sustained scientific reasoning rather than reproduce familiar patterns.",
         "My work on [CritPt: A Frontier Physics Research Benchmark](https://arxiv.org/abs/2509.26574) contributes to evaluating AI reasoning on research-level physics problems. Looking forward, I am interested in developing AI-assisted approaches that strengthen physical understanding, help researchers explore difficult problems, and support—rather than obscure—the conceptual reasoning at the heart of quantum science."
       ],
+      "figures": [],
       "papersHeading": "Selected related work",
       "papers": [],
       "subthemes": []

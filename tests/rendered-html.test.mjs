@@ -38,6 +38,12 @@ test("renders research themes and related papers from content files", async () =
     /Quantum protocols through the lens of foundational concepts/,
   );
   assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
+  assert.match(html, /\/research\/classical-process\.png/);
+  assert.match(html, /\/research\/nonclassicality-hierarchy\.png/);
+  assert.match(html, /\/research\/array-spade\.png/);
+  assert.match(html, /\/research\/one-way-telescopy\.png/);
+  assert.match(html, /Classical explainability of an individual quantum process/);
+  assert.match(html, /One-way, entanglement-assisted long-baseline interferometry/);
 });
 
 test("renders publication pages and highlights the profile author", async () => {
@@ -57,6 +63,10 @@ test("ships the local editor and editable content files", async () => {
     access(new URL("../scripts/content_editor.py", import.meta.url)),
     access(new URL("../editor/index.html", import.meta.url)),
     access(new URL("../editor/editor.js", import.meta.url)),
+    access(new URL("../public/research/classical-process.png", import.meta.url)),
+    access(new URL("../public/research/nonclassicality-hierarchy.png", import.meta.url)),
+    access(new URL("../public/research/array-spade.png", import.meta.url)),
+    access(new URL("../public/research/one-way-telescopy.png", import.meta.url)),
   ]);
 
   const editorSource = await readFile(

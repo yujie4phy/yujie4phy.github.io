@@ -16,6 +16,16 @@ type ResearchPaper = {
   note: string;
 };
 
+type ResearchFigure = {
+  src: string;
+  alt: string;
+  caption: string;
+  href: string;
+  width: number;
+  height: number;
+  wide: boolean;
+};
+
 function PaperList({ papers }: { papers: ResearchPaper[] }) {
   if (!papers.length) return null;
 
@@ -28,6 +38,38 @@ function PaperList({ papers }: { papers: ResearchPaper[] }) {
         </li>
       ))}
     </ul>
+  );
+}
+
+function FigureGallery({ figures }: { figures: ResearchFigure[] }) {
+  if (!figures.length) return null;
+
+  return (
+    <div className="research-figures" aria-label="Research illustrations">
+      {figures.map((figure) => (
+        <figure
+          className={`research-figure${figure.wide ? " wide" : ""}`}
+          key={figure.src}
+        >
+          <a
+            className="research-figure-image-link"
+            href={figure.href}
+            aria-label={`${figure.caption} View the related paper`}
+          >
+            <img
+              src={figure.src}
+              alt={figure.alt}
+              width={figure.width}
+              height={figure.height}
+              loading="lazy"
+            />
+          </a>
+          <figcaption>
+            {figure.caption} <a href={figure.href}>View paper ↗</a>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
   );
 }
 
@@ -76,6 +118,8 @@ export default function ResearchPage() {
           <div className="research-copy">
             <Paragraphs paragraphs={theme.paragraphs} />
           </div>
+
+          <FigureGallery figures={theme.figures} />
 
           {theme.papers.length ? (
             <>
