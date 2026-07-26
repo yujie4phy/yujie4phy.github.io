@@ -351,7 +351,19 @@ function renderObject(value, path, key, nested = false) {
     container.append(heading);
   }
 
-  Object.entries(value).forEach(([childKey, childValue]) => {
+  const entries = Object.entries(value);
+  if (
+    key === "publications" &&
+    !Object.prototype.hasOwnProperty.call(value, "selected")
+  ) {
+    const linksIndex = entries.findIndex(([childKey]) => childKey === "links");
+    entries.splice(linksIndex === -1 ? entries.length : linksIndex, 0, [
+      "selected",
+      false,
+    ]);
+  }
+
+  entries.forEach(([childKey, childValue]) => {
     container.append(renderValue(childValue, [...path, childKey], childKey, true));
   });
   return container;

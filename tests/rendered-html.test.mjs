@@ -59,6 +59,13 @@ test("ships the local editor and editable content files", async () => {
     access(new URL("../editor/editor.js", import.meta.url)),
   ]);
 
+  const editorSource = await readFile(
+    new URL("../editor/editor.js", import.meta.url),
+    "utf8",
+  );
+  assert.match(editorSource, /key === "publications"/);
+  assert.match(editorSource, /\[\s*"selected",\s*false,?\s*\]/);
+
   const files = [
     "about.json",
     "research.json",
