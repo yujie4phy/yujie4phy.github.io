@@ -26,6 +26,14 @@ type ResearchFigure = {
   wide: boolean;
 };
 
+type ResearchSubtheme = {
+  title: string;
+  paragraphs: string[];
+  papers: ResearchPaper[];
+  figuresBefore?: ResearchFigure[];
+  figuresAfter?: ResearchFigure[];
+};
+
 function PaperList({ papers }: { papers: ResearchPaper[] }) {
   if (!papers.length) return null;
 
@@ -64,9 +72,7 @@ function FigureGallery({ figures }: { figures: ResearchFigure[] }) {
               loading="lazy"
             />
           </a>
-          <figcaption>
-            {figure.caption} <a href={figure.href}>View paper ↗</a>
-          </figcaption>
+          <figcaption>{figure.caption}</figcaption>
         </figure>
       ))}
     </div>
@@ -128,13 +134,19 @@ export default function ResearchPage() {
             </>
           ) : null}
 
-          {theme.subthemes.map((subtheme) => (
-            <div className="research-subtheme" key={subtheme.title}>
-              <h3>{subtheme.title}</h3>
-              <Paragraphs paragraphs={subtheme.paragraphs} />
-              <PaperList papers={subtheme.papers} />
-            </div>
-          ))}
+          {theme.subthemes.map((subthemeValue) => {
+            const subtheme = subthemeValue as ResearchSubtheme;
+
+            return (
+              <div className="research-subtheme" key={subtheme.title}>
+                <FigureGallery figures={subtheme.figuresBefore ?? []} />
+                <h3>{subtheme.title}</h3>
+                <Paragraphs paragraphs={subtheme.paragraphs} />
+                <PaperList papers={subtheme.papers} />
+                <FigureGallery figures={subtheme.figuresAfter ?? []} />
+              </div>
+            );
+          })}
         </section>
       ))}
     </SiteShell>

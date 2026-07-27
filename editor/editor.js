@@ -81,6 +81,8 @@ const friendlyLabels = {
   event: "Event",
   familyName: "Family name",
   figures: "Illustrative figures",
+  figuresAfter: "Figures after this subtopic",
+  figuresBefore: "Figures before this subtopic",
   givenName: "Given name",
   href: "Web link",
   icon: "Icon",
@@ -278,8 +280,10 @@ function templateFor(collectionKey) {
     },
     subthemes: {
       title: "New subtopic",
+      figuresBefore: [],
       paragraphs: [""],
       papers: [],
+      figuresAfter: [],
     },
     papers: {
       title: "Paper title",

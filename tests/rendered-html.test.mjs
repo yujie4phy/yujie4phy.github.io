@@ -38,10 +38,23 @@ test("renders research themes and related papers from content files", async () =
     /Quantum protocols through the lens of foundational concepts/,
   );
   assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
+  assert.match(html, /\/research\/classical-process\.png/);
   assert.match(html, /\/research\/nonclassicality-hierarchy\.png/);
   assert.match(html, /\/research\/array-spade\.png/);
   assert.match(html, /\/research\/one-way-telescopy\.png/);
   assert.match(html, /One-way, entanglement-assisted long-baseline interferometry/);
+  assert.doesNotMatch(html, /View paper/);
+
+  const processFigure = html.indexOf("/research/classical-process.png");
+  const leibnizianSection = html.indexOf(
+    "Leibnizian nonclassicality through generalized noncontextuality",
+  );
+  const hierarchyFigure = html.indexOf(
+    "/research/nonclassicality-hierarchy.png",
+  );
+
+  assert.ok(processFigure < leibnizianSection);
+  assert.ok(leibnizianSection < hierarchyFigure);
 });
 
 test("renders publication pages and highlights the profile author", async () => {
