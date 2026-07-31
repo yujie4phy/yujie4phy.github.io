@@ -78,6 +78,11 @@
           ],
           "papers": [
             {
+              "title": "Exact Incompatibility-Breaking Criterion for Unital Qubit Channels",
+              "href": "https://arxiv.org/abs/2607.27757",
+              "note": "An exact criterion for when unital qubit channels make every POVM jointly measurable, with corresponding steering boundaries for two-qubit states."
+            },
+            {
               "title": "Exact Steering Bound for Two-Qubit Werner States",
               "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.250201",
               "note": "The exact Werner-state steering threshold under general measurements and its connection to measurement incompatibility."
@@ -176,7 +181,7 @@
             {
               "title": "Temporally Localized Quantum Operations on Continuous-Wave Thermal Light",
               "href": "https://journals.aps.org/prl/abstract/10.1103/y4v8-1wgm",
-              "note": "A temporal-mode framework for processing continuous-wave thermal light in sensing and astronomy."
+              "note": "Study the localized temporal mode assumption for processing continuous-wave thermal light in sensing and astronomy."
             },
             {
               "title": "Superresolution in Interferometric Imaging of Strong Thermal Sources",

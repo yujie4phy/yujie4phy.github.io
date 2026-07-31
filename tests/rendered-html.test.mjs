@@ -60,6 +60,8 @@ test("renders research themes and related papers from content files", async () =
 test("renders publication pages and highlights the profile author", async () => {
   const html = await output("publications/index.html");
 
+  assert.match(html, /Exact Incompatibility-Breaking Criterion for Unital Qubit Channels/);
+  assert.match(html, /arXiv:2607\.27757 \(2026\)/);
   assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
   assert.match(html, /<strong class="self-author">Yujie Zhang<\/strong>/);
   assert.match(html, /Physical Review Letters 132, 250201/);
