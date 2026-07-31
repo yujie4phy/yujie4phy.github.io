@@ -31,8 +31,13 @@ test("renders research themes and related papers from content files", async () =
     html,
     /Leibnizian nonclassicality through generalized noncontextuality/,
   );
-  assert.match(html, /Measurement incompatibility and quantum steering/);
-  assert.match(html, /Bell nonlocality/);
+  assert.match(
+    html,
+    /Measurement incompatibility, quantum steering, and Bell nonlocality/,
+  );
+  assert.doesNotMatch(html, />Bell nonlocality<\/h3>/);
+  assert.match(html, /Exact Incompatibility-Breaking Criterion for Unital Qubit Channels/);
+  assert.match(html, /Channel Activation of CHSH Nonlocality/);
   assert.match(
     html,
     /Quantum protocols through the lens of foundational concepts/,

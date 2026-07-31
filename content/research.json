@@ -72,9 +72,9 @@
           ]
         },
         {
-          "title": "Measurement incompatibility and quantum steering",
+          "title": "Measurement incompatibility, quantum steering, and Bell nonlocality",
           "paragraphs": [
-            "I study the close operational relationship between measurement incompatibility and quantum steering. My work asks when general measurements reveal steering, how sharply the boundary between steerable and unsteerable correlations can be characterized, and what classical resources are required to simulate steering experiments."
+            "I study the close operational relationships among measurement incompatibility, quantum steering, and Bell nonlocality. My work asks when general measurements reveal steering, how sharply the boundary between steerable and unsteerable correlations can be characterized, and what classical resources are required to simulate steering experiments. I also investigate activation phenomena, in which quantum channels that individually cannot distribute CHSH nonlocality can do so when used together."
           ],
           "papers": [
             {
@@ -91,15 +91,7 @@
               "title": "Cost of Simulating Entanglement in Steering Scenarios",
               "href": "https://quantum-journal.org/papers/q-2025-10-31-1902/",
               "note": "The shared-randomness resources required to simulate entangled states in steering experiments."
-            }
-          ]
-        },
-        {
-          "title": "Bell nonlocality",
-          "paragraphs": [
-            "I investigate activation phenomena, in which quantum channels that individually cannot distribute CHSH nonlocality can do so when used together."
-          ],
-          "papers": [
+            },
             {
               "title": "Channel Activation of CHSH Nonlocality",
               "href": "https://iopscience.iop.org/article/10.1088/1367-2630/ab7bef/meta",
