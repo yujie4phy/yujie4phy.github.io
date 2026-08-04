@@ -110,20 +110,21 @@
     ]
   },
   {
-    "year": 2025,
+    "year": 2026,
     "venue": "Quantum",
-    "title": "Quantifiers and Witnesses for the Nonclassicality of Measurements and of States",
+    "title": "Quantifiers and witnesses for the nonclassicality of measurements and of states",
     "authors": "Yujie Zhang, Yìlè Yīng, David Schmid",
-    "citation": "arXiv:2504.02944 (2025); accepted in Quantum",
-    "abstract": "This work develops quantitative measures and experimentally accessible witnesses for the operational nonclassicality of measurements and states.",
+    "citation": "Quantum 10, 2180 (2026)",
+    "abstract": "In recent work [Phys. Rev. X 16, 021050], we proposed a unified notion of nonclassicality that applies to arbitrary processes in quantum theory, including individual quantum states, measurements, and sets thereof. This notion is derived from the principle of generalized noncontextuality, but in a novel manner that applies to individual processes rather than full experiments or theories. In the present work, we develop semidefinite-programming-based certificates and witnesses for the nonclassicality of states, sources, measurements, and sets thereof. These theory-dependent methods complement theory-independent approaches based on noncontextuality inequalities. We demonstrate the framework through a variety of explicit examples.",
+    "selected": true,
     "links": [
       {
         "label": "arXiv",
         "href": "https://arxiv.org/abs/2504.02944"
       },
       {
-        "label": "PDF",
-        "href": "https://arxiv.org/pdf/2504.02944"
+        "label": "Journal",
+        "href": "https://quantum-journal.org/papers/q-2026-07-30-2180/"
       }
     ]
   },
@@ -349,7 +350,6 @@
     "authors": "Yujie Zhang, Xinan Chen, Eric Chitambar",
     "citation": "Quantum 6, 653 (2022)",
     "abstract": "A multiple access channel describes a situation in which multiple senders are trying to forward messages to a single receiver using some physical medium. In this paper we consider scenarios in which this medium consists of just a single classical or quantum particle. In the quantum case, the particle can be prepared in a superposition state thereby allowing for a richer family of encoding strategies. To make the comparison between quantum and classical channels precise, we introduce an operational framework in which all possible encoding strategies consume no more than a single particle. We apply this framework to an N-port interferometer experiment in which each party controls a path the particle can traverse. When used for the purpose of communication, this setup embodies a multiple access channel (MAC) built with a single particle.",
-    "selected": true,
     "links": [
       {
         "label": "arXiv",

@@ -45,9 +45,9 @@ export default function Home() {
         </aside>
       </section>
 
-      <section className="section-block" aria-labelledby="selected-publications">
+      <section className="section-block" aria-labelledby="selected-recent-publications">
         <div className="section-heading-row">
-          <h2 id="selected-publications">selected publications</h2>
+          <h2 id="selected-recent-publications">selected recent publications</h2>
           <Link className="text-link" href="/publications">view all →</Link>
         </div>
         <PublicationList publications={selected} compact />

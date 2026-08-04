@@ -14,7 +14,12 @@ test("renders the editable About content and profile links", async () => {
   assert.match(html, /Institute for Quantum Computing/);
   assert.match(html, /Perimeter Institute for Theoretical Physics/);
   assert.match(html, /https:\/\/x\.com\/Yujie4physics/);
-  assert.match(html, /selected publications/);
+  assert.match(html, /selected recent publications/);
+  assert.match(
+    html,
+    /Quantifiers and witnesses for the nonclassicality of measurements and of states/,
+  );
+  assert.doesNotMatch(html, /Building Multiple Access Channels with a Single Particle/);
   assert.match(
     html,
     /class="profile-photo"[^>]+width="175"[^>]+height="175"/,
@@ -67,6 +72,7 @@ test("renders publication pages and highlights the profile author", async () => 
 
   assert.match(html, /Exact Incompatibility-Breaking Criterion for Unital Qubit Channels/);
   assert.match(html, /arXiv:2607\.27757 \(2026\)/);
+  assert.match(html, /Quantum 10, 2180 \(2026\)/);
   assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
   assert.match(html, /<strong class="self-author">Yujie Zhang<\/strong>/);
   assert.match(html, /Physical Review Letters 132, 250201/);
