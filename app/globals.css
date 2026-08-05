@@ -317,6 +317,16 @@ summary {
   gap: 10px;
 }
 
+.publication-number {
+  min-width: 3ch;
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.75;
+}
+
 .venue-tag {
   display: inline-flex;
   padding: 5px 9px;

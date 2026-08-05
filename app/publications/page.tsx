@@ -13,6 +13,16 @@ export default function PublicationsPage() {
   const years = Array.from(new Set(publications.map((publication) => publication.year))).sort(
     (a, b) => b - a,
   );
+  let nextPublicationNumber = 1;
+  const yearSections = years.map((year) => {
+    const yearPublications = publications.filter(
+      (publication) => publication.year === year,
+    );
+    const startNumber = nextPublicationNumber;
+    nextPublicationNumber += yearPublications.length;
+
+    return { year, publications: yearPublications, startNumber };
+  });
 
   return (
     <SiteShell
@@ -28,10 +38,18 @@ export default function PublicationsPage() {
           </p>
         ))}
       </div>
-      {years.map((year) => (
-        <section className="year-section" key={year} aria-labelledby={`year-${year}`}>
-          <h2 id={`year-${year}`}>{year}</h2>
-          <PublicationList publications={publications.filter((publication) => publication.year === year)} />
+      {yearSections.map((section) => (
+        <section
+          className="year-section"
+          key={section.year}
+          aria-labelledby={`year-${section.year}`}
+        >
+          <h2 id={`year-${section.year}`}>{section.year}</h2>
+          <PublicationList
+            publications={section.publications}
+            numbered
+            startNumber={section.startNumber}
+          />
         </section>
       ))}
     </SiteShell>

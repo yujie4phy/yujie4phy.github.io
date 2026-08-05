@@ -15,6 +15,7 @@ test("renders the editable About content and profile links", async () => {
   assert.match(html, /Perimeter Institute for Theoretical Physics/);
   assert.match(html, /https:\/\/x\.com\/Yujie4physics/);
   assert.match(html, /selected recent publications/);
+  assert.doesNotMatch(html, /class="publication-number"/);
   assert.match(
     html,
     /Quantifiers and witnesses for the nonclassicality of measurements and of states/,
@@ -70,6 +71,8 @@ test("renders research themes and related papers from content files", async () =
 test("renders publication pages and highlights the profile author", async () => {
   const html = await output("publications/index.html");
 
+  assert.match(html, /class="publication-number"[^>]*>\[1\]<\/span>/);
+  assert.match(html, /class="publication-number"[^>]*>\[2\]<\/span>/);
   assert.match(html, /Exact Incompatibility-Breaking Criterion for Unital Qubit Channels/);
   assert.match(html, /arXiv:2607\.27757 \(2026\)/);
   assert.match(html, /Quantum 10, 2180 \(2026\)/);

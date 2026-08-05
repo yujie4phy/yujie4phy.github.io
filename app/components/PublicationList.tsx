@@ -18,15 +18,35 @@ function highlightSelfAuthor(authors: string) {
 export function PublicationList({
   publications,
   compact = false,
+  numbered = false,
+  startNumber = 1,
 }: {
   publications: Publication[];
   compact?: boolean;
+  numbered?: boolean;
+  startNumber?: number;
 }) {
+  const className = [
+    "publication-list",
+    compact ? "compact" : "",
+    numbered ? "numbered" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
-    <div className={compact ? "publication-list compact" : "publication-list"}>
-      {publications.map((publication) => (
+    <div className={className}>
+      {publications.map((publication, index) => (
         <article className="publication" key={`${publication.year}-${publication.title}`}>
           <div className="venue-column">
+            {numbered ? (
+              <span
+                className="publication-number"
+                aria-label={`Publication ${startNumber + index}`}
+              >
+                [{startNumber + index}]
+              </span>
+            ) : null}
             <span className="venue-tag">{publication.venue}</span>
             <span className="publication-year">{publication.year}</span>
           </div>
