@@ -71,8 +71,11 @@ test("renders research themes and related papers from content files", async () =
 test("renders publication pages and highlights the profile author", async () => {
   const html = await output("publications/index.html");
 
-  assert.match(html, /class="publication-number"[^>]*>\[1\]<\/span>/);
-  assert.match(html, /class="publication-number"[^>]*>\[2\]<\/span>/);
+  assert.match(html, /class="publication-number" aria-label="Publication 22"/);
+  assert.match(
+    html,
+    /aria-label="Publication 1"[\s\S]{0,500}Adaptive Tomography of Qubits/,
+  );
   assert.match(html, /Exact Incompatibility-Breaking Criterion for Unital Qubit Channels/);
   assert.match(html, /arXiv:2607\.27757 \(2026\)/);
   assert.match(html, /Quantum 10, 2180 \(2026\)/);

@@ -13,16 +13,16 @@ export default function PublicationsPage() {
   const years = Array.from(new Set(publications.map((publication) => publication.year))).sort(
     (a, b) => b - a,
   );
-  let nextPublicationNumber = 1;
-  const yearSections = years.map((year) => {
-    const yearPublications = publications.filter(
-      (publication) => publication.year === year,
-    );
-    const startNumber = nextPublicationNumber;
-    nextPublicationNumber += yearPublications.length;
-
-    return { year, publications: yearPublications, startNumber };
-  });
+  const publicationsByYear = years.map((year) => ({
+    year,
+    publications: publications.filter((publication) => publication.year === year),
+  }));
+  const yearSections = publicationsByYear.map((section, index) => ({
+    ...section,
+    startNumber: publicationsByYear
+      .slice(index)
+      .reduce((total, yearSection) => total + yearSection.publications.length, 0),
+  }));
 
   return (
     <SiteShell
@@ -49,6 +49,7 @@ export default function PublicationsPage() {
             publications={section.publications}
             numbered
             startNumber={section.startNumber}
+            numberDirection="descending"
           />
         </section>
       ))}
