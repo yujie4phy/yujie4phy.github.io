@@ -54,8 +54,8 @@
               "note": "Quantitative measures and experimentally accessible witnesses for the nonclassicality of measurements and states."
             },
             {
-              "title": "Entanglement Certification with Noncontextuality Inequalities",
-              "href": "https://doi.org/10.1103/dxpr-wp6l",
+              "title": "Entanglement Certification Using Noncontextuality Inequalities",
+              "href": "https://journals.aps.org/prx/abstract/10.1103/dxpr-wp6l",
               "note": "A hierarchy of noncontextuality inequalities connecting entanglement, steering, and Bell nonlocality."
             }
           ],
@@ -64,7 +64,7 @@
               "src": "/research/nonclassicality-hierarchy.png",
               "alt": "Nested hierarchy relating noncontextual, local, unsteerable, separable, classical, and quantum sets.",
               "caption": "Hierarchy connecting noncontextuality inequalities with entanglement, steering, and Bell nonlocality.",
-              "href": "https://journals.aps.org/prx/accepted/10.1103/dxpr-wp6l",
+              "href": "https://journals.aps.org/prx/abstract/10.1103/dxpr-wp6l",
               "width": 2406,
               "height": 1114,
               "wide": true

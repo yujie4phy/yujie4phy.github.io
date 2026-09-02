@@ -34,9 +34,9 @@
   {
     "year": 2026,
     "venue": "PRX",
-    "title": "Entanglement Certification with Noncontextuality Inequalities",
+    "title": "Entanglement Certification Using Noncontextuality Inequalities",
     "authors": "Yujie Zhang, Jonah Spodek, David Schmid, Carter Reid, Liam J. Morrison, Thomas Jennewein, Kevin J. Resch, Robert W. Spekkens",
-    "citation": "Physical Review X (2026)",
+    "citation": "Physical Review X 16, 031057 (2026)",
     "abstract": "By combining the assumptions of Bell locality with those of generalized noncontextuality, we define classes of noncontextuality inequalities for correlations arising in a bipartite Bell circuit. These classes are distinguished by which subsets of the full set of operational identities are taken as input to the principle of noncontextuality; certain natural subsets form a hierarchy that provides a new way of understanding and classifying quantum correlations, including entanglement, steering, and nonlocality. Each level of this hierarchy gives rise to a corresponding class of noncontextuality inequalities whose violation witnesses one of these forms of bipartite quantum resourcefulness, thereby yielding different sufficient conditions for entanglement. The resulting entanglement certification paradigm requires no prior characterization of the measurements, is independent of tomographic gauge freedom, and can certify any entangled state without auxiliary entangled sources. To illustrate its power, we show that noncontextuality inequalities can certify entanglement for families of two-qubit isotropic states for which Bell or steering inequalities are known to fail. We also show that, compared with the Bell test, this approach certifies a much larger fraction of entangled states, while the associated membership problem is more tractable.",
     "selected": true,
     "links": [
@@ -46,7 +46,7 @@
       },
       {
         "label": "Journal",
-        "href": "https://doi.org/10.1103/dxpr-wp6l"
+        "href": "https://journals.aps.org/prx/abstract/10.1103/dxpr-wp6l"
       }
     ]
   },

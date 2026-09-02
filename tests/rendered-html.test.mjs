@@ -48,7 +48,8 @@ test("renders research themes and related papers from content files", async () =
     html,
     /Quantum protocols through the lens of foundational concepts/,
   );
-  assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
+  assert.match(html, /Entanglement Certification Using Noncontextuality Inequalities/);
+  assert.match(html, /journals\.aps\.org\/prx\/abstract\/10\.1103\/dxpr-wp6l/);
   assert.match(html, /\/research\/classical-process\.png/);
   assert.match(html, /\/research\/nonclassicality-hierarchy\.png/);
   assert.match(html, /\/research\/array-spade\.png/);
@@ -79,7 +80,9 @@ test("renders publication pages and highlights the profile author", async () => 
   assert.match(html, /Exact Incompatibility-Breaking Criterion for Unital Qubit Channels/);
   assert.match(html, /arXiv:2607\.27757 \(2026\)/);
   assert.match(html, /Quantum 10, 2180 \(2026\)/);
-  assert.match(html, /Entanglement Certification with Noncontextuality Inequalities/);
+  assert.match(html, /Entanglement Certification Using Noncontextuality Inequalities/);
+  assert.match(html, /Physical Review X 16, 031057 \(2026\)/);
+  assert.match(html, /journals\.aps\.org\/prx\/abstract\/10\.1103\/dxpr-wp6l/);
   assert.match(html, /<strong class="self-author">Yujie Zhang<\/strong>/);
   assert.match(html, /Physical Review Letters 132, 250201/);
   assert.match(html, /My work spans quantum foundations, quantum information/);
