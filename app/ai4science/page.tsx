@@ -18,7 +18,7 @@ export default function AI4SciencePage() {
       pageDescription={ai4science.pageDescription}
       pageHeadingVariant="compact"
     >
-      <section className="ai4science-intro" aria-labelledby="ai4science-introduction">
+      <section className="ai-disclosure" aria-labelledby="ai4science-introduction">
         <h2 id="ai4science-introduction">About these notes</h2>
         {ai4science.introduction.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
@@ -58,10 +58,6 @@ export default function AI4SciencePage() {
               </a>
             </div>
 
-            <aside className="ai-disclosure" aria-label="AI authorship disclosure">
-              <h3>AI authorship disclosure</h3>
-              <p>{note.disclosure}</p>
-            </aside>
           </article>
         ))}
       </div>

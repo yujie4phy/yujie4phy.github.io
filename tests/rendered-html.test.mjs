@@ -95,7 +95,7 @@ test("renders the AI4Science section and its first downloadable note", async () 
 
   assert.match(html, /AI4Science/);
   assert.match(html, /Exact PVM-Incompatibility-Breaking Criterion/);
-  assert.match(html, /AI authorship disclosure/);
+  assert.match(html, /About these notes/);
   assert.match(html, /Phys\. Rev\. Lett\. 122, 240401 \(2019\)/);
   assert.match(html, /https:\/\/arxiv\.org\/abs\/1808\.09349/);
   assert.match(html, /\|\|D⁻¹t\|\| ≤ 1/);

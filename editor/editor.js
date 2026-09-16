@@ -17,7 +17,7 @@ const sectionDefinitions = [
     key: "ai4science",
     label: "AI4Science",
     kicker: "AI4SCIENCE PAGE",
-    description: "Edit the introduction, research-note summaries, disclosures, and PDF links.",
+    description: "Edit the shared introduction, research-note summaries, and PDF links.",
     route: "/ai4science/",
   },
   {
@@ -130,7 +130,6 @@ const longTextKeys = new Set([
   "citation",
   "description",
   "detail",
-  "disclosure",
   "note",
   "paragraphs",
   "topics",
@@ -247,7 +246,6 @@ function templateFor(collectionKey) {
       title: "New AI research note",
       pdf: "",
       paragraphs: [],
-      disclosure: "",
     },
     employment: {
       title: "",

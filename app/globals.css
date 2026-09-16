@@ -787,21 +787,6 @@ summary {
   line-height: 1.5;
 }
 
-.ai4science-intro {
-  max-width: 720px;
-}
-
-.ai4science-intro h2 {
-  margin: 0 0 18px;
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-.ai4science-intro p {
-  margin: 0 0 18px;
-}
-
 .ai-note-list {
   margin-top: 76px;
 }
@@ -911,13 +896,13 @@ summary {
 
 .ai-disclosure {
   max-width: 720px;
-  margin-top: 34px;
+  margin: 0;
   padding: 22px 24px;
   border-left: 3px solid var(--accent);
   background: var(--surface-soft);
 }
 
-.ai-disclosure h3 {
+.ai-disclosure h2 {
   margin: 0 0 8px;
   font-size: 0.82rem;
   font-weight: 800;
@@ -929,6 +914,10 @@ summary {
   margin: 0;
   color: var(--muted);
   font-size: 0.93rem;
+}
+
+.ai-disclosure p + p {
+  margin-top: 12px;
 }
 
 .site-footer {
