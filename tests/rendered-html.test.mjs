@@ -90,6 +90,21 @@ test("renders publication pages and highlights the profile author", async () => 
   assert.match(html, /An asterisk denotes co-first authorship/);
 });
 
+test("renders the AI4Science section and its first downloadable note", async () => {
+  const html = await output("ai4science/index.html");
+
+  assert.match(html, /AI4Science/);
+  assert.match(html, /Exact PVM-Incompatibility-Breaking Criterion/);
+  assert.match(html, /AI authorship disclosure/);
+  assert.match(html, /Phys\. Rev\. Lett\. 122, 240401 \(2019\)/);
+  assert.match(html, /https:\/\/arxiv\.org\/abs\/1808\.09349/);
+  assert.match(html, /\|\|T⁻¹t\|\| ≤ 1/);
+  assert.match(
+    html,
+    /\/ai4science\/exact-pvm-incompatibility-breaking-nonunital-qubit-channels\.pdf/,
+  );
+});
+
 test("ships the local editor and editable content files", async () => {
   await Promise.all([
     access(new URL("../Edit My Website.command", import.meta.url)),
@@ -100,6 +115,12 @@ test("ships the local editor and editable content files", async () => {
     access(new URL("../public/research/nonclassicality-hierarchy.png", import.meta.url)),
     access(new URL("../public/research/array-spade.png", import.meta.url)),
     access(new URL("../public/research/one-way-telescopy.png", import.meta.url)),
+    access(
+      new URL(
+        "../public/ai4science/exact-pvm-incompatibility-breaking-nonunital-qubit-channels.pdf",
+        import.meta.url,
+      ),
+    ),
   ]);
 
   const editorSource = await readFile(
@@ -111,6 +132,7 @@ test("ships the local editor and editable content files", async () => {
 
   const files = [
     "about.json",
+    "ai4science.json",
     "research.json",
     "publications.json",
     "publications-page.json",

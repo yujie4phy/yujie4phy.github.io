@@ -5,12 +5,20 @@ import { SiArxiv, SiGooglescholar, SiOrcid } from "react-icons/si";
 import { profile } from "../site-data";
 import { ThemeToggle } from "./ThemeToggle";
 
-type Section = "about" | "cv" | "others" | "publications" | "research" | "talks";
+type Section =
+  | "about"
+  | "ai4science"
+  | "cv"
+  | "others"
+  | "publications"
+  | "research"
+  | "talks";
 
 const navigation: { label: string; href: string; id: Section }[] = [
   { label: "about", href: "/", id: "about" },
   { label: "publications", href: "/publications", id: "publications" },
   { label: "research", href: "/research", id: "research" },
+  { label: "AI4Science", href: "/ai4science", id: "ai4science" },
   { label: "talks", href: "/talks", id: "talks" },
   { label: "others", href: "/others", id: "others" },
   { label: "CV", href: "/cv", id: "cv" },

@@ -32,6 +32,7 @@ MAX_ASSET_SIZE = 80 * 1024 * 1024
 SECTIONS = {
     "profile": "profile.json",
     "about": "about.json",
+    "ai4science": "ai4science.json",
     "publications": "publications.json",
     "publications-page": "publications-page.json",
     "research": "research.json",
