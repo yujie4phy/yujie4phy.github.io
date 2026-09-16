@@ -98,7 +98,7 @@ test("renders the AI4Science section and its first downloadable note", async () 
   assert.match(html, /About these notes/);
   assert.match(html, /Phys\. Rev\. Lett\. 122, 240401 \(2019\)/);
   assert.match(html, /https:\/\/arxiv\.org\/abs\/1808\.09349/);
-  assert.match(html, /\|\|D⁻¹t\|\| ≤ 1/);
+  assert.match(html, /\|\|D⁻ᵀt\|\| ≤ 1/);
   assert.match(
     html,
     /\/ai4science\/exact-pvm-incompatibility-breaking-nonunital-qubit-channels\.pdf/,
