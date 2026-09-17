@@ -96,6 +96,11 @@ test("renders the AI4Science section and its first downloadable note", async () 
   assert.match(html, /AI4Science/);
   assert.match(html, /Exact PVM-Incompatibility-Breaking Criterion/);
   assert.match(html, /About these notes/);
+  assert.match(html, /This note was generated independently by ChatGPT\./);
+  assert.match(html, /https:\/\/arxiv\.org\/abs\/2609\.14272/);
+  assert.doesNotMatch(html, /I acknowledge their results explicitly/);
+  assert.doesNotMatch(html, /The note gives a self-contained derivation in channel notation/);
+  assert.doesNotMatch(html, /through my interactive work with ChatGPT/);
   assert.match(html, /Phys\. Rev\. Lett\. 122, 240401 \(2019\)/);
   assert.match(html, /https:\/\/arxiv\.org\/abs\/1808\.09349/);
   assert.match(html, /\|\|D⁻ᵀt\|\| ≤ 1/);
