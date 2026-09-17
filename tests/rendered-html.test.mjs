@@ -96,6 +96,9 @@ test("renders the AI4Science section and its first downloadable note", async () 
   assert.match(html, /AI4Science/);
   assert.match(html, /Exact PVM-Incompatibility-Breaking Criterion/);
   assert.match(html, /About these notes/);
+  assert.match(html, /not intended for submission elsewhere in their current form/);
+  assert.match(html, /research papers for clearer presentation and wider dissemination/);
+  assert.doesNotMatch(html, /These notes are working documents rather than peer-reviewed publications/);
   assert.match(html, /This note was generated independently by ChatGPT\./);
   assert.match(html, /https:\/\/arxiv\.org\/abs\/2609\.14272/);
   assert.doesNotMatch(html, /I acknowledge their results explicitly/);
