@@ -74,9 +74,14 @@
         {
           "title": "Measurement incompatibility, quantum steering, and Bell nonlocality",
           "paragraphs": [
-            "I study the close operational relationships among measurement incompatibility, quantum steering, and Bell nonlocality. My work asks when general measurements reveal steering, how sharply the boundary between steerable and unsteerable correlations can be characterized, and what classical resources are required to simulate steering experiments. I also investigate activation phenomena, in which quantum channels that individually cannot distribute CHSH nonlocality can do so when used together."
+            "I study the close operational relationships among measurement incompatibility, quantum steering, and Bell nonlocality. My work asks when general measurements reveal steering, how sharply the boundary between steerable and unsteerable correlations can be characterized, and what classical resources are required to simulate steering experiments. I also study compatibility of measurements, channels, and instruments when a parent can retain a quantum system of bounded dimension, connecting these questions to quantum memory and entanglement dimensionality. I also investigate activation phenomena, in which quantum channels that individually cannot distribute CHSH nonlocality can do so when used together."
           ],
           "papers": [
+            {
+              "title": "Compatibility of quantum instruments",
+              "href": "https://arxiv.org/abs/2609.40266",
+              "note": "A framework for compatibility with bounded-dimensional quantum memory, linking instruments to Schmidt-number certification and one-way LOCC."
+            },
             {
               "title": "Exact Incompatibility-Breaking Criterion for Unital Qubit Channels",
               "href": "https://arxiv.org/abs/2607.27757",
@@ -102,9 +107,14 @@
         {
           "title": "Quantum protocols through the lens of foundational concepts",
           "paragraphs": [
-            "Foundational concepts can clarify where a quantum advantage comes from and how to use it more effectively. I apply this perspective to communication protocols enabled by single-particle superposition and to entanglement-assisted sensing under superselection-rule constraints, where identifying the relevant physical restriction leads directly to sharper performance limits and improved protocols."
+            "Foundational concepts can clarify where a quantum advantage comes from and how to use it more effectively. I apply this perspective to communication protocols enabled by single-particle superposition and to entanglement-assisted sensing under superselection-rule constraints, where identifying the relevant physical restriction leads directly to sharper performance limits and improved protocols. I also investigate how generalized contextuality and operational equivalences can certify secret key against post-quantum eavesdroppers under individual attacks."
           ],
           "papers": [
+            {
+              "title": "Quantum key distribution using generalized contextuality against post-quantum eavesdroppers",
+              "href": "https://arxiv.org/abs/2610.00595",
+              "note": "Secret-key certification from operational equivalences against individual post-quantum attacks, showing that contextuality is necessary but not sufficient for a positive key rate."
+            },
             {
               "title": "Building Multiple Access Channels with a Single Particle",
               "href": "https://quantum-journal.org/papers/q-2022-02-16-653/",

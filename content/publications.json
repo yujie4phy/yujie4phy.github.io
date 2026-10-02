@@ -2,6 +2,36 @@
   {
     "year": 2026,
     "venue": "arXiv",
+    "title": "Quantum key distribution using generalized contextuality against post-quantum eavesdroppers",
+    "authors": "Daniel Centeno, Roberto D. Baldijão, Maria Ciudad Alañón, Yujie Zhang, Pedro Lauand, Elie Wolfe",
+    "citation": "arXiv:2610.00595 (2026)",
+    "abstract": "Bell nonlocality allows secret key to be certified without trusting the internal operation of the devices, and even against eavesdroppers constrained only by the no-signaling principle. We ask whether generalized contextuality, a notion of nonclassicality available in prepare-and-measure experiments on a single system, can play an analogous role. In our approach, Alice and Bob first establish operational equivalences among their local preparation and measurement procedures, which are then treated as theory-independent constraints that any physical intervention on the communication channel, including that of an adversary, must respect. Eve is otherwise unrestricted, that is, her intervention on the transmitted system is not assumed to be described by quantum theory. Within this adversarial model, we show that Eve's optimal guessing probability against individual attacks is the solution of a finite linear program, and hence that a worst-case asymptotic key rate follows from the observed statistics and the operational equivalences alone. We prove that contextuality is necessary for a positive key rate. However, we also show that it is not sufficient. Concretely, the (3,2)-parity-oblivious random access code, known to yield secret key against a quantum eavesdropper, yields none certifiable key rate against a post-quantum one. Conversely, operational equivalences with no analogue among no-signaling constraints can strictly increase the asymptotic key rate. We illustrate this with the prepare-and-measure version of the standard CHSH protocol with an aligned key-generating setting.",
+    "selected": false,
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2610.00595"
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "venue": "arXiv",
+    "title": "Compatibility of quantum instruments",
+    "authors": "Chloe Kim, Yujie Zhang, Eric Chitambar, Marius Junge, Felix Leditzky",
+    "citation": "arXiv:2609.40266 (2026)",
+    "abstract": "Measurement compatibility asks whether a family of quantum measurements can be simulated by one parent measurement followed by classical post-processing. We extend this measurement compatibility to the notion of d-compatibility for measurements, channels, and instruments whose parent passes a d-dimensional quantum system and unlimited classical information to the post-processing. We formulate d-compatibility as a common linear factorization of operator spaces and operator systems and show that d-compatible families form a closed set, even with infinitely many settings and a separable infinite-dimensional input. To certify d-incompatibility, we define the compatibility functional as the smallest product of completely bounded norms over common factorizations through a d-dimensional register. Using factorization theory of operator spaces, we show that measure-and-prepare channels defined in terms of mutually unbiased bases and pinching channels defined in terms of Heisenberg-Weyl operators are d-incompatible in certain regimes of d. We also link d-compatibility of multi-instruments to the preparability of Choi assemblages using channel-state duality, and use this connection to show that for bipartite states the (in)compatibility of instruments can be used to certify Schmidt numbers and the implementability of the instrument using one-way LOCC protocols. Finally, our compatibility functional also bounds the generalized robustness of compatibility, which we interpret through a memory-bounded nontransient preparation game.",
+    "selected": false,
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2609.40266"
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "venue": "arXiv",
     "title": "Exact Incompatibility-Breaking Criterion for Unital Qubit Channels",
     "authors": "Yujie Zhang",
     "citation": "arXiv:2607.27757 (2026)",

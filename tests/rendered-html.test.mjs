@@ -44,6 +44,10 @@ test("renders research themes and related papers from content files", async () =
   assert.doesNotMatch(html, />Bell nonlocality<\/h3>/);
   assert.match(html, /Exact Incompatibility-Breaking Criterion for Unital Qubit Channels/);
   assert.match(html, /Channel Activation of CHSH Nonlocality/);
+  assert.match(html, /Compatibility of quantum instruments/);
+  assert.match(html, /https:\/\/arxiv\.org\/abs\/2609\.40266/);
+  assert.match(html, /Quantum key distribution using generalized contextuality against post-quantum eavesdroppers/);
+  assert.match(html, /https:\/\/arxiv\.org\/abs\/2610\.00595/);
   assert.match(
     html,
     /Quantum protocols through the lens of foundational concepts/,
@@ -72,7 +76,8 @@ test("renders research themes and related papers from content files", async () =
 test("renders publication pages and highlights the profile author", async () => {
   const html = await output("publications/index.html");
 
-  assert.match(html, /class="publication-number" aria-label="Publication 22"/);
+  assert.match(html, /aria-label="Publication 24"[\s\S]{0,500}Quantum key distribution using generalized contextuality/);
+  assert.match(html, /aria-label="Publication 23"[\s\S]{0,500}Compatibility of quantum instruments/);
   assert.match(
     html,
     /aria-label="Publication 1"[\s\S]{0,500}Adaptive Tomography of Qubits/,
