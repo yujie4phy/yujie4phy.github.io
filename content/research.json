@@ -40,7 +40,7 @@
             }
           ],
           "paragraphs": [
-            "I use generalized noncontextuality to formulate a Leibnizian notion of classical explainability: operationally indistinguishable procedures should be represented identically in a classical model. This principle provides a unified way to define the classical–nonclassical boundary for individual quantum processes and to develop practical methods for certifying and quantifying nonclassicality."
+            "I use generalized noncontextuality to formulate a Leibnizian notion of classical explainability: operationally indistinguishable procedures should be represented identically in a classical model. This principle provides a unified way to define the classical–nonclassical boundary for individual quantum processes and to develop practical methods for certifying and quantifying nonclassicality. I also study the experimental resources required for self-consistent entanglement certification, including how the number of measurement effects and state copies scales with the desired resolution and confidence."
           ],
           "papers": [
             {
@@ -57,6 +57,11 @@
               "title": "Entanglement Certification Using Noncontextuality Inequalities",
               "href": "https://journals.aps.org/prx/abstract/10.1103/dxpr-wp6l",
               "note": "A hierarchy of noncontextuality inequalities connecting entanglement, steering, and Bell nonlocality."
+            },
+            {
+              "title": "Complexity of self-consistent entanglement certification",
+              "href": "https://arxiv.org/abs/2610.08757",
+              "note": "Optimal measurement-effect counts for a given entanglement resolution, and optimal copy complexity when the operational identities are known."
             }
           ],
           "figuresAfter": [
@@ -74,9 +79,14 @@
         {
           "title": "Measurement incompatibility, quantum steering, and Bell nonlocality",
           "paragraphs": [
-            "I study the close operational relationships among measurement incompatibility, quantum steering, and Bell nonlocality. My work asks when general measurements reveal steering, how sharply the boundary between steerable and unsteerable correlations can be characterized, and what classical resources are required to simulate steering experiments. I also study compatibility of measurements, channels, and instruments when a parent can retain a quantum system of bounded dimension, connecting these questions to quantum memory and entanglement dimensionality. I also investigate activation phenomena, in which quantum channels that individually cannot distribute CHSH nonlocality can do so when used together."
+            "I study the close operational relationships among measurement incompatibility, quantum steering, and Bell nonlocality. My work asks when general measurements reveal steering, how sharply the boundary between steerable and unsteerable correlations can be characterized, and what classical resources are required to simulate steering experiments. I also study compatibility of measurements, channels, and instruments when a parent can retain a quantum system of bounded dimension, connecting these questions to quantum memory and entanglement dimensionality. Another direction concerns how quantum channels destroy or preserve measurement incompatibility, including superactivation when two incompatibility-breaking channels are used in parallel. I also investigate activation phenomena, in which quantum channels that individually cannot distribute CHSH nonlocality can do so when used together."
           ],
           "papers": [
+            {
+              "title": "Destroying and Preserving Measurement Incompatibility over a Quantum Channel",
+              "href": "https://arxiv.org/abs/2610.06642",
+              "note": "A zonoid-based study of incompatibility-breaking and incompatibility-preserving channels, including superactivation and its connection to two-copy quantum steering."
+            },
             {
               "title": "Compatibility of quantum instruments",
               "href": "https://arxiv.org/abs/2609.40266",

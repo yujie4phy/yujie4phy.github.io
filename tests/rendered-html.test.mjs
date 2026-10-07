@@ -48,6 +48,10 @@ test("renders research themes and related papers from content files", async () =
   assert.match(html, /https:\/\/arxiv\.org\/abs\/2609\.40266/);
   assert.match(html, /Quantum key distribution using generalized contextuality against post-quantum eavesdroppers/);
   assert.match(html, /https:\/\/arxiv\.org\/abs\/2610\.00595/);
+  assert.match(html, /Complexity of self-consistent entanglement certification/);
+  assert.match(html, /https:\/\/arxiv\.org\/abs\/2610\.08757/);
+  assert.match(html, /Destroying and Preserving Measurement Incompatibility over a Quantum Channel/);
+  assert.match(html, /https:\/\/arxiv\.org\/abs\/2610\.06642/);
   assert.match(
     html,
     /Quantum protocols through the lens of foundational concepts/,
@@ -76,6 +80,8 @@ test("renders research themes and related papers from content files", async () =
 test("renders publication pages and highlights the profile author", async () => {
   const html = await output("publications/index.html");
 
+  assert.match(html, /aria-label="Publication 26"[\s\S]{0,500}Complexity of self-consistent entanglement certification/);
+  assert.match(html, /aria-label="Publication 25"[\s\S]{0,500}Destroying and Preserving Measurement Incompatibility over a Quantum Channel/);
   assert.match(html, /aria-label="Publication 24"[\s\S]{0,500}Quantum key distribution using generalized contextuality/);
   assert.match(html, /aria-label="Publication 23"[\s\S]{0,500}Compatibility of quantum instruments/);
   assert.match(

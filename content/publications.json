@@ -2,6 +2,36 @@
   {
     "year": 2026,
     "venue": "arXiv",
+    "title": "Complexity of self-consistent entanglement certification",
+    "authors": "Yujie Zhang",
+    "citation": "arXiv:2610.08757 (2026)",
+    "abstract": "In recent work Phys. Rev. X 16, 031057 (2026), we proposed a self-consistent approach to entanglement certification based on generalized noncontextuality. It requires no prior characterization of the measurement devices and, given access to all local measurements, can certify every entangled state in a Bell circuit. Here, we study the complexity of this protocol in a finite experiment. At fixed local dimension d, we show that the optimal number of distinct local effects needed to reach a trace-distance entanglement resolution γ is Θ_d(γ⁻⁽ᵈ⁻¹⁾). This scaling is necessary even when the measurements are tailored to the target state. Independent Haar-random projective measurements instead require Θ_d(γ⁻⁽ᵈ⁻¹⁾ log(1/γ)) effects. Finally, we show that, once the exact operational identities are known, Θ_d(γ⁻² log(1/δ)) copies of the target state are necessary and sufficient for certification with error probability at most δ. Determining the optimal sample complexity when those identities must instead be inferred from the same finite target-state data remains open.",
+    "selected": false,
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2610.08757"
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "venue": "arXiv",
+    "title": "Destroying and Preserving Measurement Incompatibility over a Quantum Channel",
+    "authors": "Eric Chitambar, Yujie Zhang",
+    "citation": "arXiv:2610.06642 (2026)",
+    "abstract": "A quantum channel is called incompatibility-breaking if it always destroys the incompatibility of quantum measurements. On the other extreme are incompatibility-preserving channels, which never destroy incompatibility. This work studies both types of channels through the mathematical framework of zonotopes and zonoids, an approach that provides a complete characterization of compatibility for dichotomic measurements and is particularly powerful in the qubit setting. Using the language of zonoids, we present necessary and sufficient conditions for when a qubit unital channel is incompatibility-breaking, which are also sufficient for nonunital channels. As one of our main results, we demonstrate the superactivation phenomenon of two incompatibility-breaking qubit channels that are no longer incompatibility-breaking when used in parallel. Translating this result into the task of quantum steering, it says that two copies of a two-qubit Werner state can be steered at noise threshold 1/2, even though this is impossible using just one copy. For the problem of incompatibility preservation, we prove that a quantum channel with matching input and output dimensions will preserve general incompatibility if and only if it is a unitary transformation. When the output dimension is larger, this result no longer holds, and we offer a conjectured form of a general incompatibility-preserving channel.",
+    "selected": false,
+    "links": [
+      {
+        "label": "arXiv",
+        "href": "https://arxiv.org/abs/2610.06642"
+      }
+    ]
+  },
+  {
+    "year": 2026,
+    "venue": "arXiv",
     "title": "Quantum key distribution using generalized contextuality against post-quantum eavesdroppers",
     "authors": "Daniel Centeno, Roberto D. Baldijão, Maria Ciudad Alañón, Yujie Zhang, Pedro Lauand, Elie Wolfe",
     "citation": "arXiv:2610.00595 (2026)",
